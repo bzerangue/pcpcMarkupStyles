@@ -16,9 +16,20 @@
 	.slatsWrap {
 		@include column(8);
 	}
-	
+
 	.panelWrap {
 		@include column(4);
+	}
+}
+
+/* Article */
+.article {
+	#pageMenu {
+		@include column(4);
+	}
+
+	article {
+		@include column(8);
 	}
 }
 
