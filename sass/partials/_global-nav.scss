@@ -1,0 +1,42 @@
+nav#globalNav {
+
+	&.top-bar {
+		margin-bottom: 0;
+		// @include horizontal-centered-list(ul, li); // Special Attn: This is currently conflicting with dropdowns. 
+
+		// Dropdowns
+			.dropdown {
+				~ a {position: relative;}
+				
+				.dropdownWrap {
+					width:100%;
+					left:0;
+					display: none;
+					position:absolute;
+					height:auto;
+					background: #114c6e;
+	  				background: rgba(17, 76, 110, 0.98);
+				}
+
+				&.hovering .dropdownWrap{
+					display: block;
+				}
+
+				.dropdownColumn {
+					@include column(3);
+					display: inline-table;
+
+					li {
+						float: none !important; 
+
+					}
+				}
+
+				li.name {
+					color:white;
+					font-size: ms(1);
+				}
+			}
+	}
+}
+

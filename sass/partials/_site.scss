@@ -1,0 +1,39 @@
+/* Body */
+body {
+	background: $white;
+}
+
+/* Shared */
+.inner {@include outerRow();}
+
+// Search Box
+.search input[type="text"] {
+	@include border-radius(100px);
+}
+
+// Highlight Color
+::selection {
+	background: #84ADC4; /* Safari */
+	color:white;
+	}
+::-moz-selection {
+	background: #84ADC4; /* Firefox */
+}
+
+/* Footer */
+#footerWrap {
+	background:$green;
+
+	.footerColumn {
+		@include column(3);
+
+		.name {
+			color:white;
+			font-size: ms(1);
+		}
+
+		a {color:white;}
+
+		li {list-style:none;}
+	}
+}

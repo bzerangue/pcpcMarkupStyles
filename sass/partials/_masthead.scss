@@ -1,0 +1,27 @@
+/* Masthead */
+#mastheadWrap {
+	background: #064f75;
+}
+
+
+#masthead {
+	
+	#name a {
+		font-size: ms(2);
+		float:left;
+	}
+
+	#hours {
+		float:left;
+	}
+
+	nav#actionNav {
+		float:right;
+
+		ul > li {
+			list-style: none;
+			float: left;
+		}
+	}
+}
+
