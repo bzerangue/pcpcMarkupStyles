@@ -1,0 +1,307 @@
+!!!
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    / Viewport
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Park Cities Presbyterian Church
+    / CSS
+    %link{:href => "css/app.css", :rel => "stylesheet"}
+      / Modernizr
+      %script{:src => "js/foundation/modernizr.foundation.js"}
+  %body
+    #pageWrap
+      / Ministry Index: Mega Drop
+      #megaDrop.ministryIndex
+        .inner
+          %header
+            %h2 Park Cities Presbyterian Church Ministry Index
+          #ministryIndexWrap
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+          / /ministryIndexWrap
+      / Masthead
+      %header#mastheadWrap
+        #masthead
+          .inner
+            %h1#name
+              %a{:href => "/"} PCPC
+            %aside#hours
+              %span.title Sunday Service Times
+              %span.body
+                8:00am - Communion Service
+                %br/
+                9:30am/11:00am
+            %nav#actionNav
+              %ul
+                %li.search
+                  %input{:placeholder => "Search", :type => "text"}/
+                %li
+                  %a{:href => "news.html"} News
+                %li
+                  %a{:href => "events.html"} Events
+                %li
+                  %a{:href => "contact.html"} Contact
+                %li
+                  %a.toggleMegaDrop{:href => "#"} Ministry Index
+          / /inner
+        / /masthead
+        %nav#globalNav.top-bar
+          %ul
+            %li.name
+              %a{:href => "#"} Title
+            %li.toggle-topbar
+              %a{:href => ""}
+          %section
+            %ul
+              %li
+                %a{:href => "about.html"} About
+              %li
+                %a{:href => "worship.html"} Worship
+              %li
+                %a{:href => "connect.html"} Connect
+              %li
+                %a{:href => "serve.html"} Serve
+              %li
+                %a{:href => "outreach.html"} Outreach
+              %li
+                %a{:href => "care.html"} Care
+              %li
+                %a{:href => "resources.html"} Resources
+              / Dropdown
+              %li.dropdown
+                %a{:href => "new-here.html"} New Here
+                .dropdownWrap
+                  .inner
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    .clear
+                  .inner
+      / /mastheadWrap
+      / Content
+      #contentWrap
+        / Welcome Header & Orbit
+        %section.welcome
+          %header
+            %h2 Welcome to Park Cities Presbyterian
+          #welcomeOrbit
+            %div
+              %h4 This is a content slider.
+              %p Each slide holds arbitrary content, like text or actions.
+            %div
+              %h4 We can include text and buttons, like this!
+              %p We take no responsibility for what happens if you click this button.
+              %p
+                %a.button{:href => "http://www.youtube.com/watch?v=dQw4w9WgXcQ", :target => "_blank"} Rock My World!
+            %div
+              %h4 What? You did not click it?
+              %p We give you the benefit of the doubt. Maybe you did, and now you are back!
+        / News: Events & Upcoming Sermon
+        %section.news
+          .inner
+            / Slats
+            .slatsWrap
+              %ol.slats
+                %li.group
+                  %a{:href => "#"}
+                    %img{:alt => "thumbnail", :src => "#"}/
+                    %h3 This is the title
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      %span.meta August 10, 2011
+                %li.group
+                  %a{:href => "#"}
+                    %img{:alt => "thumbnail", :src => "#"}/
+                    %h3 This is the title
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      %span.meta August 10, 2011
+                %li.group
+                  %a{:href => "#"}
+                    %img{:alt => "thumbnail", :src => "#"}/
+                    %h3 This is the title
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      %span.meta August 10, 2011
+            / Info Panel
+            .panelWrap
+              .panel
+                %h3 Latest Sermon
+          / /inner
+        / /news
+        %section.featuredWrap
+          .inner
+            #featuredOrbit
+              %div
+                %h4 This is a content slider.
+                %p Each slide holds arbitrary content, like text or actions.
+              %div
+                %h4 We can include text and buttons, like this!
+                %p We take no responsibility for what happens if you click this button.
+                %p
+                  %a.button{:href => "http://www.youtube.com/watch?v=dQw4w9WgXcQ", :target => "_blank"} Rock My World!
+              %div
+                %h4 What? You did not click it?
+                %p We give you the benefit of the doubt. Maybe you did, and now you are back!
+      / /contentWrap
+      / Footer
+      #footerWrap
+        .inner
+          %ul.footerColumn
+            %li.name Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+          %ul.footerColumn
+            %li.name Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+          %ul.footerColumn
+            %li.name Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+          %ul.footerColumn
+            %li.name Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+    / /pageWrap
+    / Included JS Files (Uncompressed)
+    %script{:src => "js/foundation/jquery.js"}
+    %script{:src => "js/foundation/jquery.foundation.topbar.js"}
+    %script{:src => "js/foundation/jquery.foundation.orbit.js"}
+    %script{:src => "js/foundation/app.js"}
