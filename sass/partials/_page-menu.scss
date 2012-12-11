@@ -1,0 +1,19 @@
+/*Page Menu*/
+
+// Toggle
+#sidebarToggle {
+	@extend .show-for-small;
+}
+
+// Content
+#menu {
+	@extend .hide-for-small;
+
+	ul > li.active {
+		background: $blue;
+
+		a {
+			color: white;
+		}
+	}
+}

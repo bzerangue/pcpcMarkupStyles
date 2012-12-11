@@ -288,7 +288,7 @@
           <header>
             <h2>Welcome to Park Cities Presbyterian</h2>
           </header>
-          <div id='welcomeOrbit'>
+          <!-- <div id='welcomeOrbit'>
             <div>
               <h4>This is a content slider.</h4>
               <p>Each slide holds arbitrary content, like text or actions.</p>
@@ -304,7 +304,7 @@
               <h4>What? You did not click it?</h4>
               <p>We give you the benefit of the doubt. Maybe you did, and now you are back!</p>
             </div>
-          </div>
+          </div> -->
         </section>
         <!-- News: Events & Upcoming Sermon -->
         <section class='news'>
@@ -312,49 +312,65 @@
             <!-- Slats -->
             <div class='slatsWrap'>
               <ol class='slats'>
-                <li class='group'>
+                <li class='event'>
                   <a href='#'>
-                    <img alt='thumbnail' src='#' />
+                    <time datetime="2007-08-29T13:58Z" class="timestamp">
+                      <span class="month">Nov</span>
+                      <span class="date">22</span>
+                    </time>
                     <h3>This is the title</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      <span class='meta'>August 10, 2011</span>
-                    </p>
+                    <time datetime="2007-08-29T13:58Z">
+                      Friday November 22, 2012
+                    </time>
+                    <span class="more-info">Details</span>
                   </a>
                 </li>
-                <li class='group'>
+                <li class='event'>
                   <a href='#'>
-                    <img alt='thumbnail' src='#' />
+                    <time datetime="2007-08-29T13:58Z" class="timestamp">
+                      <span class="month">Nov</span>
+                      <span class="date">22</span>
+                    </time>
                     <h3>This is the title</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      <span class='meta'>August 10, 2011</span>
-                    </p>
+                    <time datetime="2007-08-29T13:58Z">
+                      Friday November 22, 2012
+                    </time>
+                    <span class="more-info">Details</span>
                   </a>
                 </li>
-                <li class='group'>
-                  <a href='#'>
-                    <img alt='thumbnail' src='#' />
-                    <h3>This is the title</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      <span class='meta'>August 10, 2011</span>
-                    </p>
-                  </a>
-                </li>
+                
               </ol>
             </div>
             <!-- Info Panel -->
             <div class='panelWrap'>
-              <div class='panel'>
-                <h3>Latest Sermon</h3>
-              </div>
-            </div>
-          </div>
-          <!-- /inner -->
+              <aside class='panel'>
+
+                <header class="title">
+                  <h4>Latest Sermon</h4>
+                  <a href="#" class="more">Archives </a>
+                </header>
+
+                <section class="body">
+                  <time datetime="2007-08-29T13:58Z">
+                    Friday November 22, 2012
+                  </time>
+
+                  <h3><a href="#">The Title of a Engrossing Sermon Here</a></h3>
+                  <span class="tag">by Mark Davis</span>
+
+                  <menu class="mediaOptions">
+                    <a href="#" class="listen mediaButton">Listen Now</a>
+                    <a href="#" class="download mediaButton">Download MP3</a>
+                  </menu>
+                </section>
+
+              </aside>
+            </div> <!-- /panelWrap -->
+
+          </div><!-- /inner -->
         </section>
         <!-- /news -->
-        <section class='featuredWrap'>
+        <!-- <section class='featuredWrap'>
           <div class='inner'>
             <div id='featuredOrbit'>
               <div>
@@ -375,7 +391,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </div> -->
       <!-- /contentWrap -->
       <!-- Footer -->
       <div id='footerWrap'>
@@ -449,6 +465,7 @@
     <script src='js/foundation/jquery.foundation.topbar.js'></script>
     <script src='js/foundation/jquery.foundation.orbit.js'></script>
     <script src='js/foundation/jquery.foundation.offcanvas.js'></script>
+      
     <script src='js/foundation/app.js'></script>
   </body>
 </html>
