@@ -29,6 +29,7 @@ body {
 	padding: 6px;
 }
 
+
 // Input Active Color
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
 	  @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
@@ -38,13 +39,22 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus
 /* Footer */
 #footerWrap {
 	background:$green;
+	// v : For stickyfooter : v //
+	width: 100%;
+	z-index:100;
+	position:relative;
+    overflow: hidden;
+    padding-top:12px;
+
 
 	.footerColumn {
 		@include column(3);
 
 		.name {
-			color:white;
 			font-size: ms(1);
+			font-weight: bold;
+    		color:$black;
+    		margin: 4px auto;
 		}
 
 		a {color:white;}

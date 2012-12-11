@@ -281,31 +281,42 @@
         </nav>
       </header>
       <!-- /mastheadWrap -->
+
+
+
       <!-- Content -->
       <div id='contentWrap'>
+
+
+
         <!-- Welcome Header & Orbit -->
         <section class='welcome'>
           <header>
             <h2>Welcome to Park Cities Presbyterian</h2>
           </header>
-          <!-- <div id='welcomeOrbit'>
-            <div>
+          <div id='welcomeOrbit'>
+            <div class="slide">
               <h4>This is a content slider.</h4>
               <p>Each slide holds arbitrary content, like text or actions.</p>
             </div>
-            <div>
+            
+            <div class="slide">
               <h4>We can include text and buttons, like this!</h4>
               <p>We take no responsibility for what happens if you click this button.</p>
               <p>
                 <a class='button' href='http://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Rock My World!</a>
               </p>
             </div>
-            <div>
+
+            <div class="slide">
               <h4>What? You did not click it?</h4>
               <p>We give you the benefit of the doubt. Maybe you did, and now you are back!</p>
             </div>
-          </div> -->
-        </section>
+          </div> <!-- /welcomeOrbit -->
+        </section> <!-- /welcome -->
+        
+
+
         <!-- News: Events & Upcoming Sermon -->
         <section class='news'>
           <div class='inner'>
@@ -347,7 +358,7 @@
 
                 <header class="title">
                   <h4>Latest Sermon</h4>
-                  <a href="#" class="more">Archives </a>
+                  <a href="#" class="more">Archives ⃗</a>
                 </header>
 
                 <section class="body">
@@ -368,36 +379,102 @@
             </div> <!-- /panelWrap -->
 
           </div><!-- /inner -->
-        </section>
-        <!-- /news -->
-        <!-- <section class='featuredWrap'>
+        </section> <!-- /news -->
+
+
+
+        <section class='featuredWrap'>
           <div class='inner'>
+
             <div id='featuredOrbit'>
-              <div>
-                <h4>This is a content slider.</h4>
-                <p>Each slide holds arbitrary content, like text or actions.</p>
+              <div class="slide">
+                <ul class="orbitList">
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item.</p>
+                  </li>
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item. Description describing descriptive definition defining de item.</p>
+                  </li>
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item.</p>
+                  </li>
+
+                </ul>
               </div>
-              <div>
-                <h4>We can include text and buttons, like this!</h4>
-                <p>We take no responsibility for what happens if you click this button.</p>
-                <p>
-                  <a class='button' href='http://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Rock My World!</a>
-                </p>
+
+              <div class="slide">
+                <ul class="orbitList">
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item.</p>
+                  </li>
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item. Description describing descriptive definition defining de item.</p>
+                  </li>
+                  <li>
+                    <a href="#" class="th"><img src="http://placehold.it/350x200"></a>
+                    <h4>Article or Page Title</h4>
+                    <p>Description describing descriptive definition defining de item.</p>
+                  </li>
+
+                </ul>
               </div>
-              <div>
-                <h4>What? You did not click it?</h4>
-                <p>We give you the benefit of the doubt. Maybe you did, and now you are back!</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div> -->
-      <!-- /contentWrap -->
+
+            </div> <!-- /featuredOrbit -->
+
+          </div> <!-- /inner -->
+        </section> <!-- /featuredWrap -->
+
+      </div><!-- /contentWrap -->
+
+
+
       <!-- Footer -->
       <div id='footerWrap'>
         <div class='inner'>
           <ul class='footerColumn'>
-            <li class='name'>Title</li>
+            <li class='name'>Article Layouts</li>
+            <li>
+              <a href='article-text.html'>Layout: Text</a>
+            </li>
+            <li>
+              <a href='article-text_with_list.html'>Layout: Text + List</a>
+            </li>
+            <li>
+              <a href='article-text_with_video.html'>Layout: Text + Video</a>
+            </li>
+            <li>
+              <a href='article-text_with_audio.html'>Layout: Text + Audio</a>
+            </li>
+            <li>
+              <a href='article-text_with_hero'>Layout: Text + Hero Image</a>
+            </li>
+          </ul>
+          <ul class='footerColumn'>
+            <li class='name'>Menu Layouts</li>
+            <li>
+              <a href='large-menu_images.html'>Large Menu + Images</a>
+            </li>
+            <li>
+              <a href='large-menu_text.html'>Large Menu + Text</a>
+            </li>
+            <li class='name'>Use Guide</li>
+            <li>
+              <a href='use-guide.html'>Use Guide</a>
+            </li>
+            
+          </ul>
+          <ul class='footerColumn'>
+            <li class='name'>Generic Title</li>
             <li>
               <a href=''>Title of Item Goes Here</a>
             </li>
@@ -412,37 +489,7 @@
             </li>
           </ul>
           <ul class='footerColumn'>
-            <li class='name'>Title</li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-          </ul>
-          <ul class='footerColumn'>
-            <li class='name'>Title</li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-            <li>
-              <a href=''>Title of Item Goes Here</a>
-            </li>
-          </ul>
-          <ul class='footerColumn'>
-            <li class='name'>Title</li>
+            <li class='name'>Generic Title</li>
             <li>
               <a href=''>Title of Item Goes Here</a>
             </li>
@@ -460,12 +507,14 @@
       </div>
     </div>
     <!-- /pageWrap -->
-    <!-- Included JS Files (Uncompressed) -->
+    
+    <!-- JS Files (Uncompressed) -->
     <script src='js/foundation/jquery.js'></script>
     <script src='js/foundation/jquery.foundation.topbar.js'></script>
     <script src='js/foundation/jquery.foundation.orbit.js'></script>
-    <script src='js/foundation/jquery.foundation.offcanvas.js'></script>
-      
+    <script src='js/foundation/jquery.offcanvas.js'></script>
+    <script src='js/jquery.heyday.stickyfooter.js'></script>
+    <script src='js/mediaelementjs.min.js'></script>
     <script src='js/foundation/app.js'></script>
   </body>
 </html>

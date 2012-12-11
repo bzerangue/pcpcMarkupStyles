@@ -11,6 +11,7 @@
 
 
 
+
 /* Section: News */
 .news {
 	.slatsWrap {
@@ -22,6 +23,9 @@
 	}
 }
 
+
+
+
 /* Article */
 .article {
 
@@ -29,7 +33,7 @@
 		@extend .hide-for-small;
 	}
 
-	#menu {
+	#aside-panel {
 		@include column(4);
 	}
 
@@ -37,6 +41,59 @@
 		@include column(8);
 	}
 }
+
+
+
+
+/* Component: Video */
+.videoWrap {
+	@extend .flex-video;
+	padding-bottom:60.5%;
+}
+
+
+
+/* Component: Orbit List (designed for use with .featuredOrbit)*/
+ul.orbitList {
+	@include column(12, center);
+	@extend .no-bullet;
+
+	li {
+		float:left;
+		@include column(4);
+	}
+}
+
+
+
+
+/* Component: Large Menu */
+.largeMenu {
+	@include column(12);
+	.menuRow {
+		@include innerRow();
+	}
+
+	ul.menuList.text {
+		@include columns(3);
+
+		li {
+			display: inline-block;
+			margin-bottom: 14px;
+		}
+	}
+
+	ul.menuList.images {
+		@extend .no-bullet;
+		
+		li {
+			float: left;
+			@include column(3);
+		}
+	}
+}
+
+
 
 
 
