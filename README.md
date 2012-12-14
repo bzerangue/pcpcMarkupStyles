@@ -11,6 +11,7 @@ The Index Page has the works in terms of masthead and footer, but to keep things
 
 Speaking of layouts, they're probably all pretty familiar to you by now, but here's a list for your convenience:
 
+**Built-In Layouts**
 - Home Page
 
 - Article Layouts:
@@ -19,6 +20,11 @@ Speaking of layouts, they're probably all pretty familiar to you by now, but her
   - Title, Lead Paragraph, Body, Audio
   - Hero Image, Title, Lead Paragraph, Body
   - Title, Lead Paragraph, Slats
+  - Audio Detail Page
+
+- Special List Layouts
+	- Resources Lists
+	- Audio Lists
 
 - Large Menu Layouts:
   - Title, Lead Paragraph, Text List Items
@@ -30,7 +36,9 @@ Speaking of layouts, they're probably all pretty familiar to you by now, but her
 - Orbits: Welcome Orbit, Featured Orbit
 - Slats: Event Items, Article Items
 - Info Panel: Designed to highlight Media (Latest Sermon) 
-- Video: mediaelement.js
-- Audio: mediaelement.js
+- Video: vimeo iframe (responsive)
+- Audio: mediaelement.js 
 
-I've left descriptive comments for every section and hope to bring more clarity with the Use Guide. If anything is unclear, please make a note of it so we can make it better.
+
+
+[If anything is unclear or could be more semantically named, please make a note of it so we can make it better.]
