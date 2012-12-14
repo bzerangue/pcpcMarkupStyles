@@ -1,0 +1,28 @@
+/* --- Home --- */
+
+
+/* Section: Welcome */
+.welcome {
+	header {
+		background: white;
+
+		h2 {
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+/* Section: News */
+.news {
+	.slatsWrap {
+		@include column(8);
+	}
+
+	.panelWrap {
+		@include column(4);
+	}
+}
+

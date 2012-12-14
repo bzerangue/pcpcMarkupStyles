@@ -44,7 +44,7 @@
 $(window).load(function() {
      // Welcome Orbit
      $('#welcomeOrbit').orbit({ fluid: '16x6' });
-     $('#featuredOrbit').orbit({ fluid: '16x6' });
+     $('#featuredOrbit').orbit({ fluid: '16x6', pauseOnHover:  true, startClockOnMouseOut: true });
  });
 
 
@@ -92,8 +92,12 @@ $(window).load(function() {
 
 
 
+// Sticky Footer JS ---
+$(window).load(function(){
+  $("#footer").stickyFooter();
+});
 
-// Sticky Footer Plugin
+// sticky footer plugin
 (function($){
   var footer;
 
@@ -123,19 +127,12 @@ $(window).load(function() {
 
 
 
-// And, ACTION! ---
-$(document).ready(function() {
-
-  // Sticky Footer
-  $("#footerWrap").stickyFooter();
-
-});
-
-
-
 
 // Mediaelement.JS
 $('audio,video').mediaelementplayer({
+audioWidth: 160,
+features: ['playpause','duration','volume'],
+// features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
 success: function(player, node) {
   $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
 }

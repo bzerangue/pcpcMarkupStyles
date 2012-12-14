@@ -1,32 +1,7 @@
-/* Section: Welcome */
-.welcome {
-	header {
-		background: white;
-
-		h2 {
-			text-align: center;
-		}
-	}
-}
 
 
 
-
-/* Section: News */
-.news {
-	.slatsWrap {
-		@include column(8);
-	}
-
-	.panelWrap {
-		@include column(4);
-	}
-}
-
-
-
-
-/* Article */
+/* Component: Article */
 .article {
 
 	.breadcrumbs {
@@ -44,11 +19,60 @@
 
 
 
-
 /* Component: Video */
-.videoWrap {
-	@extend .flex-video;
+.video {
+	@extend .flex-video, .vimeo;
 	padding-bottom:60.5%;
+}
+
+
+/* Component: Audio Article */
+.audio {
+
+
+	dl.tags {
+		dt {font-weight:bold}
+		dt, dd {display:inline;}
+	}
+	.meta {
+		@include innerRow();
+		@extend .no-bullet;
+		@extend .inline-list;
+		padding-bottom: 4px;
+		margin: 0 0 17px !important;
+		
+		
+		> li > * {
+			display: inline !important;
+		}
+		
+		> li {
+			margin: 0 6px !important;
+		}
+		
+		li:after {
+			content: '|';
+			padding:0 0 0 8px;
+		}
+
+		li:last-child:after {
+			content: '';
+		}
+		border-bottom: 1px solid $grey;
+	}
+
+	.mediaOptions {
+		@include innerRow();
+		margin: 0;
+		padding: 0;
+		
+		> a, .audioWrap {
+			float: left;
+			margin: 0 3px;
+		}
+	}
+
+
 }
 
 
