@@ -22,9 +22,7 @@
       <!-- Content -->
       <div id='contentWrap'>
 
-
-
-        <!-- Article -->
+        <!-- Two Columns Content Layout -->
         <section role="main" class="main-section">
           <div class="inner">
 
@@ -33,29 +31,30 @@
               <a id="sidebarButton" href="#sidebar">Menu</a>
             </span>
 
-            <ul class="breadcrumbs">
-              <li><span>Home</span></li>
-              <li><span>Features</span></li>
-              <li><span>Gene Splicing</span></li>
-              <li class="current"><span>Home</span></li>
-            </ul>
-
             <!-- Body -->
             <article class="add-custom-title-for-additional-styles">
               <header class="title">
-                <h2>Outreach &amp; Help</h2>
+                <h2>Audio Resources</h2>
                 <p class="lead">Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu.</p>
               </header>
+              <hr>
+
+              <dl class="filter-tags">
+                <dt>Filter:</dt>
+                <dd class="active"><a href="#">Recent</a></dd>
+                <dd><a href="#">Popular</a></dd>
+                <dd><a href="#">Alphabetical</a></dd>
+              </dl>
 
               <section class="body">
-
-                 <!-- Slats -->
+                <!-- Slats -->
                 <div class='slatsWrap'>
                   <ol class='slats'>
                     <li class='article'>
                       <a href='#'>
                         <img alt='thumbnail' src='http://placehold.it/50x50' />
-                        <h3>This is the title</h3>
+                        <h3>The Prologue of John’s Gospel</h3>
+                        <span class="tag">John 1:1-18</span>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                           <span class='meta'>August 10, 2011</span>
@@ -84,9 +83,7 @@
                     </li>
                   </ol>
                 </div> <!-- /slatsWrap -->
-
-              </section> <!-- /body -->
-              
+              </section>
             </article>
 
             <!-- Sidebar Menu and Panel -->
@@ -95,9 +92,11 @@
               <nav id="menu" role="navigation">
                 <h4><a href="">Side Nav Title</a></h4>
                 <ul>
-                  <li class="active"><a href="">One</a></li>
+                 <li><h4>Topics</h4></li>
+                  <li class="active"><a href="">Item One</a></li>
                   <li><a href="">Two</a></li>
                   <li><a href="">Three</a></li>
+                  <li><h4>Scripture</h4></li>
                   <li><a href="">Four</a></li>
                 </ul>
               </nav>
@@ -111,9 +110,11 @@
         <section id="sidebar" role="complementary">
           <nav id="sideMenu" role="navigation">
             <ul id="sideMainNav" class="nav-bar">
+              <li><h4>Topics</h4></li>
               <li><a href="">Item One</a></li>
               <li><a href="">Two</a></li>
               <li><a href="">Three</a></li>
+              <li><h4>Scripture</h4></li>
               <li><a href="">Four</a></li>
             </ul>
           </nav>

@@ -9,6 +9,10 @@
 #menu {
 	@extend .hide-for-small;
 
+	ul {
+		@extend .no-bullet;
+	}
+
 	ul > li.active {
 		background: $blue;
 

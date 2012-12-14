@@ -22,8 +22,8 @@
       <!-- Content -->
       <div id='contentWrap'>
 
-
-        <section role="main" class="mainSection">
+        <!-- Two Columns Content Layout -->
+        <section role="main" class="main-section">
           <div class="inner">
 
             <!-- Off Canvas: Page Menu Toggle -->
@@ -31,28 +31,42 @@
               <a id="sidebarButton" href="#sidebar">Menu</a>
             </span>
 
-            <ul class="breadcrumbs">
-              <li><span>Home</span></li>
-              <li><span>Features</span></li>
-              <li><span>Gene Splicing</span></li>
-              <li class="current"><span>Home</span></li>
-            </ul>
-
-            <!-- Article -->
-            <article class="video-article">
-              <div class="video">
-                <iframe src="http://player.vimeo.com/video/45947083?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-              </div>
-
+            <!-- Body -->
+            <article class="add-custom-title-for-additional-styles">
               <header class="title">
-                <h2>Outreach &amp; Help</h2>
+                <h2>Audio Resources</h2>
                 <p class="lead">Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu.</p>
               </header>
+              <hr>
 
-              <section class="body">
-                <p>Mauris consectetur elementum massa nec convallis. Integer mauris purus, condimentum vitae mattis a, vehicula lacinia justo. Pellentesque scelerisque orci at ligula cursus eu tempor elit euismod. Donec eleifend, turpis in vulputate eleifend, orci lectus eleifend quam, et ultrices mi nisi id nulla. Nullam est magna, varius nec consectetur vel, pellentesque ac justo. Vivamus commodo pellentesque ante, sed semper nulla congue non. Nunc nec augue sed nibh dapibus accumsan. Nullam in mauris quis lacus ultricies convallis. Morbi semper suscipit elit ut suscipit. Donec lobortis tellus lorem.</p>
+              <dl class="filter-tags">
+                <dt>Filter:</dt>
+                <dd class="active"><a href="#">Recent</a></dd>
+                <dd><a href="#">Popular</a></dd>
+                <dd><a href="#">Alphabetical</a></dd>
+              </dl>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nulla massa. Sed ultricies posuere tincidunt. Morbi dolor est, aliquet quis egestas eu, consectetur nec neque. Etiam velit libero, congue eu accumsan sit amet, eleifend et sem. Donec ac felis sed sapien placerat venenatis. Fusce id tempus nunc. Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu. Fusce ornare gravida nulla, sed scelerisque sem scelerisque at.</p>
+              <!-- Resource Sections -->
+              <section class="resource-list">
+                <h3>The Collection</h3>
+                <p>Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu.</p>
+
+                <ul>
+                  <li><a href="#">The Holiness of God</a></li>
+                  <li><a href="#">Chosen by God</a></li>
+                  <li><a href="#">Objections Answered</a></li>
+                </ul>
+              </section>
+
+              <section class="resource-list">
+                <h3>Teachings by M.D Paul-Mathews</h3>
+                <p>Vestibulum pellentesque vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum venenatis eros, elementum malesuada mi imperdiet eu.</p>
+
+                <ul>
+                  <li><a href="#">The Holiness of God</a></li>
+                  <li><a href="#">Chosen by God</a></li>
+                  <li><a href="#">Objections Answered</a></li>
+                </ul>
               </section>
             </article>
 
@@ -62,13 +76,14 @@
               <nav id="menu" role="navigation">
                 <h4><a href="">Side Nav Title</a></h4>
                 <ul>
-                  <li class="active"><a href="">One</a></li>
+                 <li><h4>Topics</h4></li>
+                  <li class="active"><a href="">Item One</a></li>
                   <li><a href="">Two</a></li>
                   <li><a href="">Three</a></li>
+                  <li><h4>Scripture</h4></li>
                   <li><a href="">Four</a></li>
                 </ul>
               </nav>
-
             </div> <!-- /aside-panel -->
 
           </div> <!-- /inner -->
@@ -79,9 +94,11 @@
         <section id="sidebar" role="complementary">
           <nav id="sideMenu" role="navigation">
             <ul id="sideMainNav" class="nav-bar">
+              <li><h4>Topics</h4></li>
               <li><a href="">Item One</a></li>
               <li><a href="">Two</a></li>
               <li><a href="">Three</a></li>
+              <li><h4>Scripture</h4></li>
               <li><a href="">Four</a></li>
             </ul>
           </nav>
@@ -101,8 +118,7 @@
     <script src='js/foundation/jquery.foundation.orbit.js'></script>
     <script src='js/foundation/jquery.offcanvas.js'></script>
     <script src='js/jquery.heyday.stickyfooter.js'></script>
-    <script src='js/mediaelement-and-player.min.js'></script>
+    <script src='js/mediaelementjs.min.js'></script>
     <script src='js/foundation/app.js'></script>
-
   </body>
 </html>
