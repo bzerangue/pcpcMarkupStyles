@@ -1524,8 +1524,8 @@ dl.filter-tags { margin: 12px 0; }
 dl.filter-tags dd a { -webkit-border-radius: 4px 4px; -moz-border-radius: 4px 4px; -ms-border-radius: 4px 4px; -o-border-radius: 4px 4px; border-radius: 4px 4px; }
 
 /* Component: List Blocks - good for Resources */
-.resource-list { border-bottom: 1px solid #ddd; }
-.resource-list ul { margin-left: 12px; }
+.resource { border-bottom: 1px solid #ddd; }
+.resource ul { margin-left: 12px; }
 
 /* Component: Slats */
 ol.slats li { margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 1px solid #eee; list-style: none; }
