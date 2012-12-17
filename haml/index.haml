@@ -1,0 +1,346 @@
+!!!
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/[if gt IE 8] ><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    / Viewport
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Park Cities Presbyterian Church
+    / CSS
+    %link{:href => "css/app.css", :rel => "stylesheet"}
+      / Modernizr
+      %script{:src => "js/foundation/modernizr.foundation.js"}
+  %body
+    #pageWrap
+      / Ministry Index: Mega Drop
+      #megaDrop.ministryIndex
+        .inner
+          %header
+            %h2 Park Cities Presbyterian Church Ministry Index
+          #ministryIndexWrap
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+            %ul.ministryIndexColumn
+              %li.name Services
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+              %li
+                %a{:href => ""} Item Title Goes Here
+          / /ministryIndexWrap
+      / Masthead
+      %header#mastheadWrap
+        #masthead
+          .inner
+            %h1#name
+              %a{:href => "/"} PCPC
+            %aside#hours
+              %span.title Sunday Service Times
+              %span.body
+                8:00am - Communion Service
+                %br/
+                9:30am/11:00am
+            %nav#actionNav
+              %ul
+                %li.search
+                  %input{:placeholder => "Search", :type => "text"}/
+                %li
+                  %a{:href => "news.html"} News
+                %li
+                  %a{:href => "events.html"} Events
+                %li
+                  %a{:href => "contact.html"} Contact
+                %li
+                  %a.toggleMegaDrop{:href => "#"} Ministry Index
+          / /inner
+        / /masthead
+        %nav#globalNav.top-bar
+          %ul
+            %li.name
+              %a{:href => "#"} Title
+            %li.toggle-topbar
+              %a{:href => ""}
+          %section
+            %ul
+              %li
+                %a{:href => "about.html"} About
+              %li
+                %a{:href => "worship.html"} Worship
+              %li
+                %a{:href => "connect.html"} Connect
+              %li
+                %a{:href => "serve.html"} Serve
+              %li
+                %a{:href => "outreach.html"} Outreach
+              %li
+                %a{:href => "care.html"} Care
+              %li
+                %a{:href => "resources.html"} Resources
+              / Dropdown
+              %li.dropdown
+                %a{:href => "new-here.html"} New Here
+                .dropdownWrap
+                  .inner
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    %ul.dropdownColumn
+                      %li.name Services
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                      %li
+                        %a{:href => ""} Item Title Goes Here
+                    .clear
+                  .inner
+      / /mastheadWrap
+      / Content
+      #contentWrap
+        / Welcome Header & Orbit
+        %section.welcome
+          %header
+            %h2 Welcome to Park Cities Presbyterian
+          #welcomeOrbit
+            .slide
+              %h4 This is a content slider.
+              %p Each slide holds arbitrary content, like text or actions.
+            .slide
+              %h4 We can include text and buttons, like this!
+              %p We take no responsibility for what happens if you click this button.
+              %p
+                %a.button{:href => "http://www.youtube.com/watch?v=dQw4w9WgXcQ", :target => "_blank"} Rock My World!
+            .slide
+              %h4 What? You did not click it?
+              %p We give you the benefit of the doubt. Maybe you did, and now you are back!
+          / /welcomeOrbit
+        / /welcome
+        / News: Events & Upcoming Sermon
+        %section.news
+          .inner
+            / Slats
+            .slatsWrap
+              %ol.slats
+                %li.event
+                  %a{:href => "#"}
+                    %time.timestamp{:datetime => "2007-08-29T13:58Z"}
+                      %span.month Nov
+                      %span.date 22
+                    %h3 This is the title
+                    %time{:datetime => "2007-08-29T13:58Z"}
+                      Friday November 22, 2012
+                    %span.more-info Details
+                %li.event
+                  %a{:href => "#"}
+                    %time.timestamp{:datetime => "2007-08-29T13:58Z"}
+                      %span.month Nov
+                      %span.date 22
+                    %h3 This is the title
+                    %time{:datetime => "2007-08-29T13:58Z"}
+                      Friday November 22, 2012
+                    %span.more-info Details
+            / Info Panel
+            .panelWrap
+              %aside.panel
+                %header.title
+                  %h4 Latest Sermon
+                  %a.more{:href => "#"} Archives ⃗
+                %section.body
+                  %time{:datetime => "2007-08-29T13:58Z"}
+                    Friday November 22, 2012
+                  %h3
+                    %a{:href => "#"} The Title of a Engrossing Sermon Here
+                  %span.tag by Mark Davis
+                  %menu.mediaOptions
+                    %a.listen.mediaButton{:href => "#"} Listen Now
+                    %a.download.mediaButton{:href => "#"} Download MP3
+            / /panelWrap
+          / /inner
+        / /news
+        %section.feature
+          .inner
+            #featuredOrbit
+              .slide
+                %ul.orbitList
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item.
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item. Description describing descriptive definition defining de item.
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item.
+              .slide
+                %ul.orbitList
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item.
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item. Description describing descriptive definition defining de item.
+                  %li
+                    %a.th{:href => "#"}
+                      %img{:src => "http://placehold.it/350x200"}/
+                    %h4 Article or Page Title
+                    %p Description describing descriptive definition defining de item.
+            / /featuredOrbit
+          / /inner
+        / /featuredWrap
+      / /contentWrap
+      / Footer
+      %footer#footer
+        .inner
+          %ul.footerColumn
+            %li.name Article Layouts
+            %li
+              %a{:href => "article-text.html"} Layout: Text
+            %li
+              %a{:href => "article-text_with_list.html"} Layout: Text + List
+            %li
+              %a{:href => "article-text_with_video.html"} Layout: Text + Video
+            %li
+              %a{:href => "article-text_with_audio.html"} Layout: Text + Audio
+            %li
+              %a{:href => "article-text_with_hero"} Layout: Text + Hero Image
+          %ul.footerColumn
+            %li.name Menu Layouts
+            %li
+              %a{:href => "large-menu_images.html"} Large Menu + Images
+            %li
+              %a{:href => "large-menu_text.html"} Large Menu + Text
+            %li.name Use Guide
+            %li
+              %a{:href => "use-guide.html"} Use Guide
+          %ul.footerColumn
+            %li.name Special List Layouts
+            %li
+              %a{:href => "audio-list.html"} Layout: Audio List
+            %li
+              %a{:href => "resources-list.html"} Layout: Resources List
+            %li.name Generic Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+          %ul.footerColumn
+            %li.name Generic Title
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+            %li
+              %a{:href => ""} Title of Item Goes Here
+    / /pageWrap
+    / JS Files (Uncompressed)
+    %script{:src => "js/foundation/jquery.js"}
+    %script{:src => "js/foundation/jquery.foundation.topbar.js"}
+    %script{:src => "js/foundation/jquery.foundation.orbit.js"}
+    %script{:src => "js/foundation/jquery.offcanvas.js"}
+    %script{:src => "js/mediaelementjs.min.js"}
+    %script{:src => "js/foundation/app.js"}
