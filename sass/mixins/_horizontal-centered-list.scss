@@ -1,6 +1,6 @@
 // Horizontal Centered List
 @mixin horizontal-centered-list($ul: ul, $li: li) {
-  overflow: hidden;
+  // overflow: hidden;
 
   #{$ul},
   #{$li} {

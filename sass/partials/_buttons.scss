@@ -1,0 +1,16 @@
+/* 
+:: Buttons
+*/
+
+.mediaButton {
+	@include border-radius(6px);
+	background:#8B8B8B;
+	border: 1px solid #333;
+	color: white;
+	padding: 7px;
+}
+
+
+.button:active { 
+	@include box-shadow(0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.5) inset);	
+}

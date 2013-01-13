@@ -5,9 +5,17 @@
 .welcome {
 	header {
 		background: white;
+		border-bottom: 1px solid #E2E2E2;
 
 		h2 {
 			text-align: center;
+			padding: 14px 0 20px;
+			font-family: $serif;
+			font-style:italic;
+  			font-size: ms(4);
+			font-weight:500;
+			margin:0 auto;
+			color:$light-charcoal;
 		}
 	}
 }

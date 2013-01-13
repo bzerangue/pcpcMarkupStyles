@@ -12,13 +12,13 @@
 
 // Colors Settings
 
-// $mainColor: #2ba6cb;
-// $secondaryColor: #e9e9e9;
-// $alertColor: #c60f13;
-// $successColor: #5da423;
-// $txtColor: #222;
-// $highlightColor: #ffff99;
-// $black: #000;
+$mainColor: #176f9f; // blue
+$secondaryColor: #545454; // light-charcoal
+$alertColor: #cc5b04; // orange
+$successColor: #a1b09b; // sage
+$txtColor: #3b3b3b; // charcoal
+$highlightColor: #cc5b04; //orange
+$black: #3b3b3b;
 // $white: #fff;
 // $shinyEdge: rgba(#fff, .5);
 // $darkEdge: rgba(#000, .2);
@@ -26,14 +26,14 @@
 // Font Settings
 
 // $fontSmoothing: antialiased;
-// $headerFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$headerFontFamily: "proxima-nova" sans-serif;;
 // $headerFontWeight: bold;
 // $headerFontStyle: normal;
-// $headerFontColor: #222;
-// $bodyFontFamily: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $bodyFontWeight: normal;
+$headerFontColor: #3b3b3b; 
+$bodyFontFamily: "Arial", "Helvetica", Arial, Helvetica, sans-serif;
+$bodyFontWeight: normal;
 // $bodyFontStyle: normal;
-// $bodyFontColor: $txtColor;
+$bodyFontColor: $txtColor;
 
 // Text Direction Settings
 
@@ -95,10 +95,10 @@
 
 // Top Bar Settings
 
-// $topBarBgColor: #222;
-// $topBarHeight: 45px;
-// $topBarHeightMobile: 45px;
-// $topBarBtmMargin: 30px;
+$topBarBgColor: #004867;
+$topBarHeight: 42px;
+$topBarHeightMobile: 40px;
+$topBarBtmMargin: 12px;
 // $topBarTitleWeight: bold;
 // $topBarTitleSize: 17px;
 // $topBarLinkColor: #fff;

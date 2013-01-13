@@ -168,18 +168,15 @@ dl.filter-tags {
 
 
 
-
-/* Component: List Blocks - good for Resources */
-%list-block {
-	border-bottom: 1px solid #ddd;
-	ul {
-		margin-left:12px;
+/* Component: Slats */
+.slatsWrap header {
+	h2 {
+		line-height:1.25em;
+		font-weight:bold;
+		font-family:$sans;
+		font-size: ms(3);
 	}
 }
-
-
-
-/* Component: Slats */
 ol.slats li {
 	margin: 0 0 10px 0;
 	padding: 0 0 10px 0;
@@ -227,6 +224,20 @@ ol.slats time.timestamp {
 	margin-right: 12px;
 	height:50px;
 	width:50px;
+  font: bold 1.143em $sans;
+  line-height: 1.2em;
+  color:$light-charcoal;
+  text-transform:uppercase;
+  text-align:center;
+  width:40px;
+  .month {
+    font-size:0.857em;
+    display:block;
+  }
+  .date {
+    font-size:1.714em;
+    display:block;
+  }
 }
 ol.slats .more-info {
 	float:right;

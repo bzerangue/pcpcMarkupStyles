@@ -2,42 +2,106 @@ nav#globalNav {
 
 	&.top-bar {
 		margin-bottom: 0;
-		// @include horizontal-centered-list(ul, li); // Special Attn: This is currently conflicting with dropdowns. 
+		background: url(../images/site/glass.png) repeat-x 0 -5px, url(../images/site/bg-subnav-grain.png) repeat;
+		border-bottom: 1px solid #0B3852;
 
-		// Dropdowns
-			.dropdown {
-				~ a {position: relative;}
-				
-				.dropdownWrap {
-					width:100%;
-					left:0;
-					display: none;
-					position:absolute;
-					height:auto;
-					background: #114c6e;
-	  				background: rgba(17, 76, 110, 0.98);
-	  				z-index: 10;
-				}
 
-				&.hovering .dropdownWrap{
-					display: block;
-				}
+		ul > li {
+			&:not(.name):hover, &:not(.name).active, &:not(.name):focus {
+				background:none
+			}
+		
+			a:not(.button)	{
+				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+				text-transform: uppercase;
+				border-right: 1px solid #0C4B6E;
+				border-left: 1px solid #3087AE;
+				font-family: $sans;
+				color: #F7F4EE;
+				font-weight: 600;
+				line-height: 2.2em;
+				line-height: 2.6em;
+				height: 32px;
+				margin-top: 6px;
+				padding: 0 28px;
 
-				.dropdownColumn {
-					@include column(3);
-					display: inline-table;
-
-					li {
-						float: none !important; 
-
-					}
-				}
-
-				li.name {
-					color:white;
-					font-size: ms(1);
+				//Hover
+				&:hover {
+					color: #15415B;
+					text-shadow: 0 -1px 0px rgba(8, 41, 58, 0.44), 0 1px 0px rgba(250, 250, 250, 0.14);
 				}
 			}
+
+			&:first-child a:not(.button) {border-left: 0;}
+			&:last-child a:not(.button) {border-right: 0;}	
+
+		}
+
+		ul.dropdownColumn > li a:not(.button) {
+			text-shadow:none;
+			text-transform: capitalize;
+			border:none;
+			padding: 0 4px;
+			margin: 0;
+		}
+
+		// Dropdowns
+		.dropdown {
+			~ a {position: relative;}
+			
+			.dropdownWrap {
+				width:100%;
+				left:0;
+				display: none;
+				position:absolute;
+				height:auto;
+				background: #114c6e;
+  				background: rgba(17, 76, 110, 0.98);
+  				z-index: 10;
+  				padding: 16px 0 32px;
+  				border-top: 1px solid #296797;
+				border-bottom: 1px solid #072944;
+				top: 45px;
+			}
+
+			&.hovering .dropdownWrap{
+				display: block;
+			}
+
+			.dropdownColumn {
+				@include column(3);
+				display: inline-table;
+
+				li {
+					float: none !important; 
+					margin-bottom:6px;
+				
+					a {
+						line-height: 1.2em;
+						height: auto;
+						font-weight: 400px;
+
+						&:hover {
+							color: $dark-blue;
+						}
+					}
+				}
+			}
+
+			li.name {
+				color:$periwinkle;
+				font-size: 13px;
+				font-weight: 600;
+				margin-bottom: 7px;
+				line-height: 1.2em;
+				text-transform: uppercase;
+			}
+		}
+
+
+		section {
+			@include outerRow();
+		}
 	}
 }
 

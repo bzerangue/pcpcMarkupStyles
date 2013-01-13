@@ -1,0 +1,28 @@
+/* Footer */
+
+footer#footer {
+	background:$green;
+	// v : For stickyfooter : v //
+	width: 100%;
+	z-index:100;
+	position:relative;
+    overflow: hidden;
+    padding-top:12px;
+    border-top: 1px solid #83917E;
+
+
+	.footerColumn {
+		@include column(3);
+
+		.name {
+			font-size: ms(1);
+			font-weight: bold;
+    		color:$black;
+    		margin: 4px auto;
+		}
+
+		a {color:white;}
+
+		li {list-style:none;}
+	}
+}
