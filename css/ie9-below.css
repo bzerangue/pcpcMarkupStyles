@@ -1,0 +1,11 @@
+/*
+: LT IE 9
+*/
+.lt-ie9 #pageWrap { min-width: 1140px; }
+.lt-ie9 #globalNav.top-bar { background: #27678A; }
+.lt-ie9 #masthead nav#actionNav ul > li { padding: 0 4px; }
+.lt-ie9 #masthead nav#actionNav ul > li a.toggleMegaDrop span { top: 0; }
+.lt-ie9 .top-bar ul li a { font-style: normal; }
+.lt-ie9 a.mediaButton { background: #d1d1d1 !important; background-color: #d1d1d1 !important; background-image: none; color: white !important; }
+.lt-ie9 h1, .lt-ie9 h2, .lt-ie9 h3, .lt-ie9 h4, .lt-ie9 h5, .lt-ie9 p, .lt-ie9 a, .lt-ie9 li, .lt-ie9 span { font-family: "Arial", "helvetica", sans-serif !important; }
+.lt-ie9 .welcome header h2 { font-family: "minion-pro", serif !important; }

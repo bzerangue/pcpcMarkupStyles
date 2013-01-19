@@ -1,4 +1,4 @@
-nav#globalNav {
+#globalNav {
 
 	&.top-bar {
 		margin-bottom: 0;
@@ -8,6 +8,10 @@ nav#globalNav {
 		ul > li {
 			&:not(.name):hover, &:not(.name).active, &:not(.name):focus {
 				background:none
+			}
+
+			&.name {
+				display: none;
 			}
 		
 			a:not(.button)	{
@@ -113,8 +117,54 @@ nav#globalNav {
 }	
 
 // MQ - Above 940 //
-@media only screen and (min-width: 940px) {
+@media only screen and (max-width: 940px) {
+
+	#globalNav.top-bar {
+
+		section {
+			@include box-shadow(inset 0 0px 6px rgba(0, 0, 0, .4));
+			background:#05354d;
+		}
+
+		ul > li {
+			&.active, &:hover {
+				background: none;
+			}
+
+			a:not(.button) {
+				border: 0;
+			}
+
+			&.name {
+				border-bottom: 1px solid #0b3852;
+			}
+		
+			&.toggle-topbar {
+
+				&:after {
+					content: '▾';
+					font-size: 24px;
+					color: white;
+					float: right;
+					margin-right: 30px;
+					line-height: 1.68em;
+					@include text-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
+				}
+			}
+		}
+
+		&.expanded ul > li.toggle-topbar:after {
+			content: '▴';
+			line-height: 1.2em;
+			font-size: 32px;
+		}
+
+	}
+
 	 .top-bar > ul li.name {
-		display: none;
+		display: block !important;
 	}
 }
+
+
+

@@ -25,20 +25,16 @@ footer#footer {
 
 		li {list-style:none;}
 	}
-}
 
-// MQ - Above 940
-@media only screen and (min-width: 940px) {
 	#footer-search {
 		display: none;
 	}
 }
 
-
 // MQ - Below 940
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 768px) {
 	#footer-search {
-		display: block;
+		display: block !important;
 		margin-top: 32px;
 		border-top: 1px solid #3b3b3b;
 		padding-top: 16px;

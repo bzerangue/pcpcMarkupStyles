@@ -46,17 +46,20 @@
 			list-style: none;
 			float: left;
 
-			a {
-				color: $periwinkle;
-				font-weight: 600;
-				font-size: 13px;
-
-				&:not(.toggleMegaDrop):after {
+				a:not(.toggleMegaDrop):after {
 					content: '/';
 					padding: 0 3px;
 					color: $periwinkle !important; 
 				}
 
+				&:nth-last-child(2) a:after {
+					content: '';
+				}
+
+			a {
+				color: $periwinkle;
+				font-weight: 600;
+				font-size: 13px;
 
 				&:hover {
 					color: $dark-blue;

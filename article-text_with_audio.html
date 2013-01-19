@@ -13,6 +13,12 @@
     <link href='css/app.css' rel='stylesheet'>
       <!-- Modernizr -->
       <script src='js/foundation/modernizr.foundation.js'></script>
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <link href='css/ie9-below.css' rel='stylesheet'>
+      <![endif]-->
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+      <![endif]-->
       <!-- Typekit: Telegraph -->
       <script type="text/javascript" src="//use.typekit.net/ypu0duo.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -148,7 +154,7 @@
                   <a href='contact.html'>Contact</a>
                 </li>
                 <li>
-                  <a class='toggleMegaDrop' href='#'>Ministry Index</a>
+                  <a class='toggleMegaDrop' href='#'> <span></span></a>
                 </li>
               </ul>
             </nav>
@@ -159,7 +165,7 @@
         <nav class='top-bar' id='globalNav'>
           <ul>
             <li class='name'>
-              <a href='#'>Title</a>
+              <a href='#'>menu</a>
             </li>
             <li class='toggle-topbar'>
               <a href=''></a>
@@ -337,13 +343,13 @@
 
                 <menu class="mediaOptions">
 
-                  <a class='listen mediaButton' href='#'>Listen Now</a>
-
-                  <a href="#" class="download mediaButton">Download MP3</a>
                   <div class="audioWrap">
                     <audio controls="control" preload="none" src="/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3">
                     </audio>
                   </div>
+
+                  <a href="#" class="download mediaButton">Download MP3</a>
+                  
                 </menu>
               
 
@@ -501,6 +507,12 @@
             <li>
               <a href=''>Title of Item Goes Here</a>
             </li>
+            <li class='search' id="footer-search">
+              <div class="search-inner">
+                <input placeholder='Search' type='text' />
+                <input type="submit" class="button" value="go" />
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -512,7 +524,7 @@
     <script src='js/foundation/jquery.foundation.topbar.js'></script>
     <script src='js/foundation/jquery.foundation.orbit.js'></script>
     <script src='js/foundation/jquery.offcanvas.js'></script>
-    <script src='js/mediaelementjs.min.js'></script>
+    <script src='mediaelement/build/mediaelement-and-player.min.js'></script>
     <script src='js/foundation/app.js'></script>
   </body>
 </html>

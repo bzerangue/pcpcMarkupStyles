@@ -5,6 +5,8 @@ Removed Text: 'Menu' from
       <a href='#sidebar' id='sidebarButton'>Menu</a>
     </span>
 
+Added Span: Ministry Index Toggle
+  <a class='toggleMegaDrop' href='#'> <span></span></a>
 
 Added Image: Logo image to
 	<h1 id='name'>

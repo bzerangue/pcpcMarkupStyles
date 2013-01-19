@@ -83,7 +83,6 @@
 		}
 
 		.audioWrap {
-			margin-top: 12px;
 			clear: both;
 		}
 	}
@@ -115,10 +114,13 @@ ul.orbitList {
 	}
 
 	ul.menuList.text {
-		@include columns(3);
+		// @include columns(3);
+		@include clearfix();
+		clear:both;
 
 		li {
-			display: inline-block;
+			// display: inline-block;
+			list-style: none;
 			margin-bottom: 14px;
 
 			a {

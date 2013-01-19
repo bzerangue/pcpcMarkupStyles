@@ -13,6 +13,12 @@
     <link href='css/app.css' rel='stylesheet'>
       <!-- Modernizr -->
       <script src='js/foundation/modernizr.foundation.js'></script>
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <link href='css/ie9-below.css' rel='stylesheet'>
+      <![endif]-->
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+      <![endif]-->
       <!-- Typekit: Telegraph -->
       <script type="text/javascript" src="//use.typekit.net/ypu0duo.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -21,7 +27,7 @@
       <script>try{Typekit.load();}catch(e){}</script> -->
     </link>
   </head>
-  <body>
+  <body class='off-canvas hide-extras'>
     <div id='pageWrap'>
       <!-- Ministry Index: Mega Drop -->
       <div class='ministryIndex' id='megaDrop'>
@@ -148,7 +154,7 @@
                   <a href='contact.html'>Contact</a>
                 </li>
                 <li>
-                  <a class='toggleMegaDrop' href='#'>Ministry Index</a>
+                  <a class='toggleMegaDrop' href='#'> <span></span></a>
                 </li>
               </ul>
             </nav>
@@ -159,7 +165,7 @@
         <nav class='top-bar' id='globalNav'>
           <ul>
             <li class='name'>
-              <a href='#'>Title</a>
+              <a href='#'>menu</a>
             </li>
             <li class='toggle-topbar'>
               <a href=''></a>
@@ -287,21 +293,29 @@
         </nav>
       </header>
       <!-- /mastheadWrap -->
-
-
-      
       <!-- Content -->
       <div id='contentWrap'>
-
         <!-- Two Columns Content Layout -->
-        <section role="main" class="main-section">
-          <div class="inner">
-
+        <section class='main-section' role='main'>
+          <div class='inner'>
             <!-- Off Canvas: Page Menu Toggle -->
-            <span id="sidebarToggle">
-              <a id="sidebarButton" href="#sidebar"></a>
+            <span id='sidebarToggle'>
+              <a href='#sidebar' id='sidebarButton'></a>
             </span>
-
+            <ul class='breadcrumbs'>
+              <li>
+                <span>Home</span>
+              </li>
+              <li>
+                <span>Features</span>
+              </li>
+              <li>
+                <span>Gene Splicing</span>
+              </li>
+              <li class='current'>
+                <span>Home</span>
+              </li>
+            </ul>
             <!-- Body -->
             <article class="add-custom-title-for-additional-styles">
               <header class="title">
@@ -340,49 +354,37 @@
                 </ul>
               </section>
             </article>
-
             <!-- Sidebar Menu and Panel -->
             <div id="aside-panel">
               <!-- Sub Menu Content -->
               <nav id="menu" role="navigation">
                 <h4><a href="">Side Nav Title</a></h4>
                 <ul>
-                 <li><h4>Topics</h4></li>
                 <li><a href="">Faith</a></li>
                 <li><a href="">Devotion</a></li>
                 <li><a href="">Worship</a></li>
-                <li><h4>Scripture</h4></li>
-                <li><a href="">Jude</a></li>
                 </ul>
               </nav>
             </div> <!-- /aside-panel -->
-
-          </div> <!-- /inner -->
-        </section> <!-- /article -->
-
-
+          </div>
+          <!-- /inner -->
+        </section>
+        <!-- /article -->
         <!-- Off Canvas: Sub Menu Content -->
         <section id="sidebar" role="complementary">
           <nav id="sideMenu" role="navigation">
             <ul id="sideMainNav" class="nav-bar">
-              <li><h4>Topics</h4></li>
+              <li><h4>Scripture</h4></li>
               <li><a href="">Faith</a></li>
               <li><a href="">Devotion</a></li>
               <li><a href="">Worship</a></li>
-              <li><h4>Scripture</h4></li>
-              <li><a href="">Jude</a></li>
+              <li><a href="">Verance</a></li>
             </ul>
           </nav>
         </section>
-
-
-
-      </div><!-- /contentWrap -->
-      
-      
-    
-      
-     <!-- Footer -->
+      </div>
+      <!-- /contentWrap -->
+      <!-- Footer -->
       <footer id='footer'>
         <div class='inner'>
           <ul class='footerColumn'>
@@ -415,12 +417,11 @@
             <li>
               <a href='use-guide.html'>Use Guide</a>
             </li>
-            
           </ul>
           <ul class='footerColumn'>
             <li class='name'>Special List Layouts</li>
             <li>
-                <a href='audio-list.html'>Layout: Audio List</a>
+              <a href='audio-list.html'>Layout: Audio List</a>
             </li>
             <li>
               <a href='resources-list.html'>Layout: Resources List</a>
@@ -444,12 +445,17 @@
             <li>
               <a href=''>Title of Item Goes Here</a>
             </li>
+            <li class='search' id="footer-search">
+              <div class="search-inner">
+                <input placeholder='Search' type='text' />
+                <input type="submit" class="button" value="go" />
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <!-- /pageWrap -->
-    
     <!-- JS Files (Uncompressed) -->
     <script src='js/foundation/jquery.js'></script>
     <script src='js/foundation/jquery.foundation.topbar.js'></script>

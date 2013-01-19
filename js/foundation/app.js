@@ -130,10 +130,12 @@ $(window).load(function(){
 
 // Mediaelement.JS
 $('audio,video').mediaelementplayer({
-audioWidth: 160,
+audioWidth: 170,
 features: ['playpause','duration','volume'],
 // features: ['playpause','progress','current','duration','tracks','volume','fullscreen'],
 success: function(player, node) {
   $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
 }
 });
+
+

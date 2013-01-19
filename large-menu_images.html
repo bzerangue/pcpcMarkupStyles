@@ -13,6 +13,12 @@
     <link href='css/app.css' rel='stylesheet'>
       <!-- Modernizr -->
       <script src='js/foundation/modernizr.foundation.js'></script>
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <link href='css/ie9-below.css' rel='stylesheet'>
+      <![endif]-->
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+      <![endif]-->
       <!-- Typekit: Telegraph -->
       <script type="text/javascript" src="//use.typekit.net/ypu0duo.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -148,7 +154,7 @@
                   <a href='contact.html'>Contact</a>
                 </li>
                 <li>
-                  <a class='toggleMegaDrop' href='#'>Ministry Index</a>
+                  <a class='toggleMegaDrop' href='#'> <span></span></a>
                 </li>
               </ul>
             </nav>
@@ -159,7 +165,7 @@
         <nav class='top-bar' id='globalNav'>
           <ul>
             <li class='name'>
-              <a href='#'>Title</a>
+              <a href='#'>menu</a>
             </li>
             <li class='toggle-topbar'>
               <a href=''></a>
@@ -428,6 +434,12 @@
             </li>
             <li>
               <a href=''>Title of Item Goes Here</a>
+            </li>
+            <li class='search' id="footer-search">
+              <div class="search-inner">
+                <input placeholder='Search' type='text' />
+                <input type="submit" class="button" value="go" />
+              </div>
             </li>
           </ul>
         </div>
