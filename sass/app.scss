@@ -17,6 +17,9 @@
 @import "compass/css3";
 @import "foundation/settings";
 @import "foundation/functions/all";
+// Overide Settings
+@import "settings";
+
 
 // Control which mixins you have access too
 
@@ -55,8 +58,6 @@
 // Media Queries Overrides
 @import "foundation/components/modules/mqueries";
 
-// Overide Settings
-@import "settings";
 
 
 
@@ -71,6 +72,9 @@
 // Colors, Fonts & Img Paths
 @import "partials/colors-fontpaths-imgpaths";
 
+// Buttons
+@import "partials/buttons";
+
 // Shared
 @import "partials/shared";
 
@@ -79,6 +83,7 @@
 @import "partials/masthead";
 @import "partials/global-nav";
 @import "partials/sidebar";
+@import "partials/breadcrumbs";
 
 // Footer
 @import "partials/footer";
@@ -88,6 +93,7 @@
 
 // PCPC Components
 @import "partials/components";
+@import "partials/orbit";
 @import "partials/mediaelement";
 @import "partials/audio";
 

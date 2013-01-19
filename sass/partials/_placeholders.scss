@@ -11,6 +11,15 @@
 	}
 }
 
+// Bump right - good for 'More' links
+%bump-right {
+	@include transition(all .05s ease-in);
+	position: relative;
+
+	&:hover {
+		left: 2px;
+	}
+}
 
 %blue-smooth-gradient-bg {
 	// background-color: #004867; // Old browsers
@@ -19,7 +28,9 @@
 
 	background-color: #0b4869; // Old browsers
 	@include filter-gradient(#0b4869, #03567f, vertical); // IE6-9
-	@include background-image(linear-gradient(darken(rgba(3,86,123,1),5%), rgba(3,86,123,1)));
-	
-	
+	@include background-image(linear-gradient(darken(rgba(3,86,123,1),5%), rgba(3,86,123,1)));	
+}
+
+%arrow-rightwards {
+	&:after {content: ' →';}
 }

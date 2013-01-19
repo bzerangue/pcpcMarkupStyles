@@ -4,15 +4,14 @@ nav#globalNav {
 		margin-bottom: 0;
 		background: url(../images/site/glass.png) repeat-x 0 -5px, url(../images/site/bg-subnav-grain.png) repeat;
 		border-bottom: 1px solid #0B3852;
-
-
+		
 		ul > li {
 			&:not(.name):hover, &:not(.name).active, &:not(.name):focus {
 				background:none
 			}
 		
 			a:not(.button)	{
-				text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5);
+				@include text-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
 				text-transform: uppercase;
 				border-right: 1px solid #0C4B6E;
 				border-left: 1px solid #3087AE;
@@ -57,11 +56,11 @@ nav#globalNav {
 				height:auto;
 				background: #114c6e;
   				background: rgba(17, 76, 110, 0.98);
-  				z-index: 10;
+  				z-index: 60;
   				padding: 16px 0 32px;
   				border-top: 1px solid #296797;
 				border-bottom: 1px solid #072944;
-				top: 45px;
+				top: 42px;
 			}
 
 			&.hovering .dropdownWrap{
@@ -105,3 +104,17 @@ nav#globalNav {
 	}
 }
 
+// MQ - Below 940
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	// Override Default
+	.top-bar {
+		height:42px !important;
+	}
+}	
+
+// MQ - Above 940 //
+@media only screen and (min-width: 940px) {
+	 .top-bar > ul li.name {
+		display: none;
+	}
+}

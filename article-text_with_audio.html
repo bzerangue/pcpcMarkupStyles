@@ -13,6 +13,12 @@
     <link href='css/app.css' rel='stylesheet'>
       <!-- Modernizr -->
       <script src='js/foundation/modernizr.foundation.js'></script>
+      <!-- Typekit: Telegraph -->
+      <script type="text/javascript" src="//use.typekit.net/ypu0duo.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      <!-- Le Typekit: @PCPC 
+      <script src="//use.typekit.net/fuz6ulc.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script> -->
     </link>
   </head>
   <body class="off-canvas hide-extras">
@@ -117,7 +123,7 @@
         <div id='masthead'>
           <div class='inner'>
             <h1 id='name'>
-              <a href='/'>PCPC</a>
+              <a href='/'><img src="images/site/logo+@2x.png" alt="PCPC" /></a>
             </h1>
             <aside id='hours'>
               <span class='title'>Sunday Service Times</span>
@@ -293,7 +299,7 @@
 
             <!-- Off Canvas: Page Menu Toggle -->
             <span id="sidebarToggle">
-              <a id="sidebarButton" href="#sidebar">Menu</a>
+              <a id="sidebarButton" href="#sidebar"></a>
             </span>
 
             <ul class="breadcrumbs">
@@ -331,13 +337,13 @@
 
                 <menu class="mediaOptions">
 
+                  <a class='listen mediaButton' href='#'>Listen Now</a>
+
+                  <a href="#" class="download mediaButton">Download MP3</a>
                   <div class="audioWrap">
                     <audio controls="control" preload="none" src="/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3">
                     </audio>
                   </div>
-
-                  <a href="#" class="download mediaButton">Download MP3</a>
-
                 </menu>
               
 
@@ -377,7 +383,7 @@
 
 	                <header class="title">
 	                  <h4>Latest Sermon</h4>
-	                  <a href="#" class="more">Archives ⃗</a>
+	                  <a href="#" class="more">Archives</a>
 	                </header>
 
 	                <section class="body">
@@ -408,11 +414,22 @@
         <!-- Off Canvas: Sub Menu Content -->
         <section id="sidebar" role="complementary">
           <nav id="sideMenu" role="navigation">
-            <ul id="sideMainNav" class="nav-bar">
-              <li><a href="">Item One</a></li>
-              <li><a href="">Two</a></li>
-              <li><a href="">Three</a></li>
-              <li><a href="">Four</a></li>
+            <ul class='nav-bar' id='sideMainNav'>
+                <h4>
+                  <a href=''>Side Nav Title</a>
+                </h4>
+                <li class='active'>
+                  <a href=''>One</a>
+                </li>
+                <li>
+                  <a href=''>Two</a>
+                </li>
+                <li>
+                  <a href=''>Three</a>
+                </li>
+                <li>
+                  <a href=''>Four</a>
+                </li>
             </ul>
           </nav>
         </section>

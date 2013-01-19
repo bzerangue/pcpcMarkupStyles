@@ -1,44 +1,41 @@
-## PCPC Markup Styles
+Changes
 
-Author: Lindsey Bradford (Telegraph Creative)  
-First Draft Date: Wednesday, December 12, 2012
-
-### NOTES
-
-**Some things to note:**  
-Instead of heyday's stickyfooter, I ended up using this very short and sweet plugin: [http://www.drupalcoder.com/blog/cross-browser-sticky-footer-with-fluid-height-using-jquery](http://www.drupalcoder.com/blog/cross-browser-sticky-footer-with-fluid-height-using-jquery) simply worked out of the box, whereas the other one was reluctant. 
-The Index Page has the works in terms of masthead and footer, but to keep things concise and readable in the layout files, I only included the essentials. 
-
-Speaking of layouts, they're probably all pretty familiar to you by now, but here's a list for your convenience:
-
-**Built-In Layouts**
-- Home Page
-
-- Article Layouts:
-  - Title, Lead Paragraph, Body
-  - Title, Lead Paragraph, Body, Video
-  - Title, Lead Paragraph, Body, Audio
-  - Hero Image, Title, Lead Paragraph, Body
-  - Title, Lead Paragraph, Slats
-  - Audio Detail Page
-
-- Special List Layouts
-	- Resources Lists
-	- Audio Lists
-
-- Large Menu Layouts:
-  - Title, Lead Paragraph, Text List Items
-  - Title, Lead Paragraph, Image List Items  
-    *These can be easily combined, as illustrated in the (currently rough) Use Guide.*
-
-**Other Components:**  
-
-- Orbits: Welcome Orbit, Featured Orbit
-- Slats: Event Items, Article Items
-- Info Panel: Designed to highlight Media (Latest Sermon) 
-- Video: vimeo iframe (responsive)
-- Audio: mediaelement.js 
+Removed Text: 'Menu' from
+	<span id='sidebarToggle'>
+      <a href='#sidebar' id='sidebarButton'>Menu</a>
+    </span>
 
 
+Added Image: Logo image to
+	<h1 id='name'>
+      <a href='/'><img src="images/site/logo+@2x.png" alt="PCPC" /></a>
+    </h1>    
 
-[If anything is unclear or could be more semantically named, please make a note of it so we can make it better.]
+Fixed Doctype: Transitional doctype removed from HAML conversion…weird
+
+
+Better Defined Off Canvas Side Menu List Markup 
+	<ul class='nav-bar' id='sideMainNav'>
+        <h4>
+          <a href=''>Side Nav Title</a>
+        </h4>
+        <li class='active'>
+          <a href=''>One</a>
+        </li>
+        <li>
+          <a href=''>Two</a>
+        </li>
+        <li>
+          <a href=''>Three</a>
+        </li>
+        <li>
+          <a href=''>Four</a>
+        </li>
+    </ul>
+
+Better Defined Welcome Orbit Text Slides 
+
+Added Search Bar in Footer for Mobile
+
+Added Selectivzr script for Psuedo Classes
+  http://selectivizr.com/

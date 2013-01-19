@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]> ><! <![endif]-->
@@ -13,6 +13,9 @@
     <link href='css/app.css' rel='stylesheet'>
       <!-- Modernizr -->
       <script src='js/foundation/modernizr.foundation.js'></script>
+      <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="js/selectivizr.js"></script>
+      <![endif]-->
       <!-- Typekit: Telegraph -->
       <script type="text/javascript" src="//use.typekit.net/ypu0duo.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -148,7 +151,7 @@
                   <a href='contact.html'>Contact</a>
                 </li>
                 <li>
-                  <a class='toggleMegaDrop' href='#'>Ministry Index <span></span></a>
+                  <a class='toggleMegaDrop' href='#'> <span></span></a>
                 </li>
               </ul>
             </nav>
@@ -159,7 +162,7 @@
         <nav class='top-bar' id='globalNav'>
           <ul>
             <li class='name'>
-              <a href='#'>Title</a>
+              <a href='#'>Menu</a>
             </li>
             <li class='toggle-topbar'>
               <a href=''></a>
@@ -292,26 +295,45 @@
         <!-- Welcome Header & Orbit -->
         <section class='welcome'>
           <header>
-            <h2>Welcome to Park Cities Presbyterian</h2>
+            <h2>Welcome to Park Cities Presbyterian Church</h2>
           </header>
 
-          <!-- <div id='welcomeOrbit'>
+          <div id='welcomeOrbit'>
             <div class='slide'>
-              <h4>This is a content slider.</h4>
-              <p>Each slide holds arbitrary content, like text or actions.</p>
+              <div class="orbit-slide-text">
+                <div class="orbit-slide-column small">
+                  <h4>This is a Content Slider Header.</h4>
+                  <span class="tag">August 10, 2011</span>
+                    <p>Danish singer/songwriter Agnes Obel took up the piano at a very young age, honing her craft amidst the strains of Bartók and Chopin emanating from the fingers of her musician mother. 
+                    <span class='meta'>John 1:1-18</span>
+                  </p>
+                  <a href="#" class="button">Details</a>
+                </div>
+                <div class="orbit-slide-column big">
+                  <img src='http://placehold.it/740x340' />
+                </div>
+              </div>
             </div>
             <div class='slide'>
-              <h4>We can include text and buttons, like this!</h4>
-              <p>We take no responsibility for what happens if you click this button.</p>
-              <p>
-                <a class='button' href='http://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>Rock My World!</a>
-              </p>
+              <img src='http://placehold.it/1440x400' />
             </div>
             <div class='slide'>
-              <h4>What? You did not click it?</h4>
-              <p>We give you the benefit of the doubt. Maybe you did, and now you are back!</p>
+              <div class="orbit-slide-text">
+                <div class="orbit-slide-column big">
+                  <h4>This is a Content Slider Header.</h4>
+                  <span class="tag">August 10, 2011</span>
+                    <p>Danish singer/songwriter Agnes Obel took up the piano at a very young age, honing her craft amidst the strains of Bartók and Chopin emanating from the fingers of her musician mother. 
+                    <span class='meta'>John 1:1-18</span>
+                  </p>
+                  <a href="#" class="button">Details</a>
+                </div>
+                <div class="orbit-slide-column small">
+                  <img src='http://placehold.it/340x340' />
+                </div>
+              </div>
+              </div>
             </div>
-          </div> -->
+          </div>
           <!-- /welcomeOrbit -->
         </section>
         <!-- /welcome -->
@@ -357,7 +379,7 @@
               <aside class='panel'>
                 <header class='title'>
                   <h4>Latest Sermon</h4>
-                  <a class='more' href='#'>Archives ⃗</a>
+                  <a class='more' href='#'>Archives</a>
                 </header>
                 <section class='body'>
                   <time datetime='2007-08-29T13:58Z'>
@@ -369,7 +391,7 @@
                   <span class='tag'>by Mark Davis</span>
                   <menu class='mediaOptions'>
                     <a class='listen mediaButton' href='#'>Listen Now</a>
-                    <a class='download mediaButton' href='#'>Download MP3</a>
+                    <a class='download mediaButton' href='#'>Download</a>
                   </menu>
                 </section>
               </aside>
@@ -381,7 +403,7 @@
         <!-- /news -->
         <section class='feature'>
           <div class='inner'>
-            <!-- <div id='featuredOrbit'>
+            <div id='featuredOrbit'>
               <div class='slide'>
                 <ul class='orbitList'>
                   <li>
@@ -432,8 +454,9 @@
                   </li>
                 </ul>
               </div>
-            </div> -->
+            </div>
             <!-- /featuredOrbit -->
+
           </div>
           <!-- /inner -->
         </section>
@@ -500,6 +523,12 @@
             </li>
             <li>
               <a href=''>Title of Item Goes Here</a>
+            </li>
+            <li class='search' id="footer-search">
+              <div class="search-inner">
+                <input placeholder='Search' type='text' />
+                <input type="submit" class="button" value="go" />
+              </div>
             </li>
           </ul>
         </div>

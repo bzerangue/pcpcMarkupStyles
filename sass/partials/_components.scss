@@ -10,11 +10,15 @@
 
 	#aside-panel {
 		@include column(4);
+		margin-bottom: 32px;
 	}
 
 	article {
 		@include column(8);
+		margin-bottom: 48px;
 	}
+
+	border-left: 1px solid $light-grey;
 }
 
 
@@ -77,6 +81,11 @@
 			float: left;
 			margin: 0 3px;
 		}
+
+		.audioWrap {
+			margin-top: 12px;
+			clear: both;
+		}
 	}
 
 
@@ -111,6 +120,11 @@ ul.orbitList {
 		li {
 			display: inline-block;
 			margin-bottom: 14px;
+
+			a {
+				font-family: $sans;
+				font-weight: 600;
+			}
 		}
 	}
 
@@ -123,29 +137,90 @@ ul.orbitList {
 		}
 	}
 }
-
-
+// MQ - Below 940
+@media only screen and (max-width: 940px) { 
+	.largeMenu ul.menuList.text {
+		@include columns(auto);
+	}
+}
 
 
 
 /* Component: Panel */
 .panelWrap {
+	
 	.panel {
+	background: white;
+    border-top: 1px solid #F5F3ED;
+    border-right: 1px solid #E4E1DC;
+    border-bottom: 1px solid #C8C6C1;
+    border-left: 1px solid #EEECE7;
+    @include box-shadow(0px 0px 6px rgba(50, 50, 50, 0.15));
+	padding:18px 12px 0;
+	margin: 0;
+	position: relative;
+
+		&:after {
+          content:'';
+          background:url(../images/site/crossHatch.png) 20px -1px repeat-x;
+          width:100%;
+          height:12px;
+		  margin-left: -12px;
+		  position: absolute;
+		  bottom: 0;
+          border-top:1px solid #e8e8e8;
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+	    
+
 		.title {
-			border-bottom:1px solid $grey;
+			border-bottom:1px solid $hr;
 			display: inline-table;
 			width: 100%;
 
 			h4 {
-				float:left;
+				line-height:1.25em;
+				font-weight:bold;
+				font-family:$sans;
+				font-size: ms(1);
+				display: inline-block;
+				margin:0 12px 6px 0;
+				text-transform: uppercase;
 			}
 			.more {
-				float:right;
+				font-style: italic;
+				float: right;
+				line-height: 1.2em;
+				display: inline-block;
+				@extend %arrow-rightwards;
+				@extend %bump-right;
 			}
 		}
 
 		.body {
 			clear:both;
+			padding:10px 0;
+
+			time {
+				font-family: $serif;
+				color: $grey;
+			}
+
+			h3 {
+				line-height:1.25em;
+				font-weight:bold;
+				font-family:$sans;
+				font-size: ms(1);
+				font-size: 19px;
+				text-transform: uppercase;
+				margin: 10px 0;
+			}
+			.tag {
+				display: block;
+				font-style: italic;
+				font-family: $serif;
+			}
 		}
 		
 		.mediaOptions {
@@ -170,17 +245,28 @@ dl.filter-tags {
 
 /* Component: Slats */
 .slatsWrap header {
+	border-bottom: 1px solid $hr;
 	h2 {
 		line-height:1.25em;
 		font-weight:bold;
 		font-family:$sans;
-		font-size: ms(3);
+		font-size: ms(1);
+		display: inline-block;
+		margin-right: 12px;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
+
+	a {
+		font-style: italic;
+		@extend %arrow-rightwards;
+		@extend %bump-right;
 	}
 }
 ol.slats li {
 	margin: 0 0 10px 0;
 	padding: 0 0 10px 0;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $hr;
 	list-style:none;
 	}
 ol.slats li:last-child {
@@ -189,12 +275,14 @@ ol.slats li:last-child {
 	border-bottom: none;
 	}
 ol.slats li a h3 {
-	font-size: 18px;
+	font-size: ms(1);
+	color: $blue;
 	font-weight: bold;
 	line-height: 1.1;
+	margin-bottom:4px;
 	}
 ol.slats li .tag {
-	margin-top: -14px;
+	font-weight: 600;
 	display: block;
 	margin-bottom:4px;
 	color: #222;
@@ -209,8 +297,8 @@ ol.slats li a:hover img {
 	background: #eee;
 	}
 ol.slats li a p {
-	margin: 0 0 0 76px;
-	font-size: 14px;
+	margin: 0 0 0 70px;
+	font-size: ms(0);
 	line-height: 1.4;
 	color: #222;
 	}
@@ -218,7 +306,13 @@ ol.slats li a p span.meta {
 	display: block;
 	font-size: 12px;
 	color: #999;
+	margin: 2px auto;
 	}
+ol.slats time {
+	color: $light-charcoal;
+	font-size: 11px;
+	font-weight:600;
+}
 ol.slats time.timestamp {
 	float:left; 
 	margin-right: 12px;
@@ -239,10 +333,18 @@ ol.slats time.timestamp {
     display:block;
   }
 }
-ol.slats .more-info {
-	float:right;
+ol.slats .article .more-info {
+	margin:10px 0;
 } 
-@media screen and (max-width: 700px) {
+ol.slats li.event .more-info {margin-top: -16px; float:right;}
+
+
+
+// MQ - Below 940 //
+@media only screen and (max-width: 940px) { 
+	
+	ol.slats { margin-left: 0; }
+
 	ol.slats li a img {
 		display: block;
 		float: none;
@@ -251,6 +353,5 @@ ol.slats .more-info {
 	ol.slats li a p {
 		margin: 0;
 	}
-}	
 
-
+}

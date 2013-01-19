@@ -43,8 +43,8 @@
 // Content Orbits
 $(window).load(function() {
      // Welcome Orbit
-     $('#welcomeOrbit').orbit({ fluid: '16x6' });
-     $('#featuredOrbit').orbit({ fluid: '16x6', pauseOnHover:  true, startClockOnMouseOut: true });
+     $('#welcomeOrbit').orbit({ fluid: '12x3', pauseOnHover:  true, startClockOnMouseOut: true  });
+     $('#featuredOrbit').orbit({ fluid: '12x5', pauseOnHover:  true, startClockOnMouseOut: true });
  });
 
 

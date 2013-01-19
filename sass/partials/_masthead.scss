@@ -73,6 +73,12 @@
 				    @include text-shadow(-1px -1px 1px rgba(0, 0, 0, .5));
 				    @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.10) inset, -1px 1px 0 rgba(255, 255, 255, 0.10) inset, 1px 1px 0 rgba(255, 255, 255, 0.10) inset);
 				    
+				    &:before {
+						content: 'Ministry Index';
+						color: white;
+						@include text-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
+					}
+
 				    &.open, &:hover{
 				    	@include box-shadow(0 1px 0 rgba(0, 0, 0, 0.2) inset);
 				    }
@@ -105,5 +111,65 @@
 			width:220px;
 		}
 	}
+}
+
+// MQ - Below 680
+@media only screen and (max-width: 776px) {
+	#masthead nav#actionNav ul > li {
+		display: none;
+
+		&:last-child {
+			display: block;
+		}
+	}
+}
+
+// MQ - Below 940
+@media only screen and (max-width: 940px) {
+	#masthead {
+		#name {
+			margin: 10px 0 0 15px;
+
+			a {
+				width: 90%;
+			}
+		}
+
+		#hours {
+			margin: 18px 0;
+		}
+
+		nav#actionNav {
+			margin: 0;
+
+			ul {
+				margin-top: 20px;
+
+				> li {
+
+					&.search:before {top: 24px;}
+
+					a.toggleMegaDrop {
+						margin: 0 15px;
+
+						&:before {
+							content: '☰';
+							font-size: 18px;
+							color: white;
+							@include text-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
+						}
+
+						span {
+							display: none;
+						}
+					}
+				}
+
+			}
+		}
+
+		
+	}
+		
 }
 

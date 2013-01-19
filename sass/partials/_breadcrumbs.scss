@@ -1,0 +1,17 @@
+/* Navigation: Breadcrumbs */
+
+ul.breadcrumbs {
+	background: none;
+	border: 0;
+
+	li span {
+		text-transform: capitalize;
+		color: $grey;
+		font-size: ms(0);
+
+		&.current {
+			font-weight: 600;
+			color: $light-charcoal;
+		}
+	}
+}
