@@ -1437,8 +1437,10 @@ footer#footer #footer-search { display: none; }
   #footer-search.search:before { left: 16px; top: 20px; z-index: 10; }
   #footer-search input[type="text"] { width: 86%; display: inline-block; float: left; margin-right: 8px; }
   #footer-search input.button { background: #a1b09b; width: auto; display: inline-block; padding: 8px 10px; }
-  #footer-search input.button:hover { background: #176f9f; } }
-@media only screen and (max-width: 480px) { #footer-search input[type="text"] { width: 80%; } }
+  h #footer-search input.button:hover { background: #176f9f; } }
+@media only screen and (max-width: 480px) { #footer-search.search:before { background: none; }
+  #footer-search input[type="text"] { width: 80%; }
+  #footer-search input.button { height: 32px; -webkit-appearance: none; } }
 /* 
 :: Forms & Input 
 */

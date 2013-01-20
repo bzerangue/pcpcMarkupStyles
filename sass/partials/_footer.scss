@@ -69,6 +69,7 @@ footer#footer {
 			width: auto;
 			display: inline-block;
 			padding: 8px 10px;
+			h
 
 			&:hover {
 				background: $blue;
@@ -79,8 +80,20 @@ footer#footer {
 
 // MQ - Below 480
 @media only screen and (max-width: 480px) {
-	#footer-search input[type="text"] {
-		width: 80%
-	}
+	#footer-search {
+		&.search:before {
+			background: none;
+		}
 
+		input[type="text"] {
+			width: 80%
+		}
+
+		input.button {
+			height: 32px;
+			-webkit-appearance:none;
+		}
+
+	}
+	
 }	
