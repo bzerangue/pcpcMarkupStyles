@@ -118,15 +118,15 @@ div.orbit-wrapper div.timer {
 }
 
 
-
-
 // MQ Below 767px
 @media only screen and (max-width: 767px) {
 	
+	
 	// General
-	div.slider-nav {
-		display: block !important;
+	div.orbit-wrapper div.slider-nav.hide-for-small {
+		display: inherit !important; 
 	}
+
 
 	// Welcome Orbit ---
 	.welcome .orbit-wrapper {

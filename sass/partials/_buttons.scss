@@ -19,6 +19,7 @@
 	font-weight: bold; 
 	line-height: 1; margin: 0; outline: none; padding:8px 14px 8px; 
 	position: relative; text-align: center; text-decoration: none; 
+	-webkit-appearance:none;
 	@include transition(background-color 0.15s ease-in-out);
 	@include border-radius(16px 16px);
 	&:hover { color: white; background-color: $blue; }
@@ -47,6 +48,7 @@
 	&.listen, &.download {
 		padding:6px 26px 6px 14px;
 		position: relative;
+		margin-bottom: 6px;
 	}
 
 	&.listen:after {
