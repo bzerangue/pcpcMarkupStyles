@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* --- 
 ------ Made by Telegraph 
------- For Buon Giorno Coffee
+------ For Park Cities Presbyterian Church
 ------ With Care of much Coffee
 ------ Telegraph Creative © 2012
 ------ @lindseybradford, @courtney271
@@ -1369,9 +1369,12 @@ body.ie7 .top-bar .attached > ul > li:hover > a, .top-bar .attached > ul > li:ho
   #masthead nav#actionNav { margin: 0; }
   #masthead nav#actionNav ul { margin-top: 20px; }
   #masthead nav#actionNav ul > li.search:before { top: 24px; }
-  #masthead nav#actionNav ul > li a.toggleMegaDrop { margin: 0 15px; }
+  #masthead nav#actionNav ul > li a.toggleMegaDrop { margin: 0 15px 0 0; }
   #masthead nav#actionNav ul > li a.toggleMegaDrop:before { content: '☰'; font-size: 18px; color: white; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5); }
   #masthead nav#actionNav ul > li a.toggleMegaDrop span { display: none; } }
+@media only screen and (max-width: 480px) { #masthead #hours { font-size: 10px; }
+  #masthead nav#actionNav ul > li a.toggleMegaDrop { padding: 4px 6px; }
+  #masthead nav#actionNav ul > li a.toggleMegaDrop:before { font-size: 16px; } }
 #globalNav.top-bar { margin-bottom: 0; background: url(../images/site/glass.png) repeat-x 0 -5px, url(../images/site/bg-subnav-grain.png) repeat; border-bottom: 1px solid #0b3852; }
 #globalNav.top-bar ul > li:not(.name):hover, #globalNav.top-bar ul > li:not(.name).active, #globalNav.top-bar ul > li:not(.name):focus { background: none; }
 #globalNav.top-bar ul > li.name { display: none; }
@@ -1398,7 +1401,7 @@ body.ie7 .top-bar .attached > ul > li:hover > a, .top-bar .attached > ul > li:ho
   #globalNav.top-bar ul > li a:not(.button) { border: 0; }
   #globalNav.top-bar ul > li.name { border-bottom: 1px solid #0b3852; }
   #globalNav.top-bar ul > li.toggle-topbar:after { content: '▾'; font-size: 24px; color: white; float: right; margin-right: 30px; line-height: 1.68em; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5); }
-  #globalNav.top-bar.expanded ul > li.toggle-topbar:after { content: '▴'; line-height: 1.2em; font-size: 32px; }
+  #globalNav.top-bar.expanded ul > li.toggle-topbar:after { content: '▴'; line-height: 1.2em; }
   .top-bar > ul li.name { display: block !important; } }
 /*Sidebar*/
 #sidebarToggle { background: #DCE9F0; padding: 6px 15px 11px; margin-left: -15px; margin-right: -15px; margin-bottom: 16px; }
@@ -1435,6 +1438,7 @@ footer#footer #footer-search { display: none; }
   #footer-search input[type="text"] { width: 86%; display: inline-block; float: left; margin-right: 8px; }
   #footer-search input.button { background: #a1b09b; width: auto; display: inline-block; padding: 8px 10px; }
   #footer-search input.button:hover { background: #176f9f; } }
+@media only screen and (max-width: 480px) { #footer-search input[type="text"] { width: 80%; } }
 /* 
 :: Forms & Input 
 */
@@ -1575,6 +1579,7 @@ div.orbit-wrapper div.timer { display: none; }
   .welcome .orbit-wrapper div.slider-nav span.left { background-position: -20px -120px; }
   .welcome .orbit-wrapper div.slider-nav span.right { background-position: -120px -120px; }
   .welcome .orbit-wrapper .orbit-slide-text p, .welcome .orbit-wrapper .orbit-slide-text img { display: none; }
+  .welcome .orbit-wrapper .orbit-slide-text h4 { font-size: 14px; }
   .welcome .orbit-wrapper .orbit-slide-text span.tag { float: left; }
   .welcome .orbit-wrapper .orbit-slide-text .button { float: right; }
   .feature .orbit-wrapper #featuredOrbit { padding-bottom: 60px; margin-right: 15px; }
