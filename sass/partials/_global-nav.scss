@@ -4,6 +4,7 @@
 		margin-bottom: 0;
 		background: url(../images/site/glass.png) repeat-x 0 -5px, url(../images/site/bg-subnav-grain.png) repeat;
 		border-bottom: 1px solid #0B3852;
+
 		
 		ul > li {
 			&:not(.name):hover, &:not(.name).active, &:not(.name):focus {
@@ -155,7 +156,8 @@
 
 		&.expanded ul > li.toggle-topbar:after {
 			content: '▴';
-			line-height: 1.2em;
+			position: relative;
+			top:0;
 		}
 
 	}
