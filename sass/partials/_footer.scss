@@ -21,7 +21,11 @@ footer#footer {
     		margin: 4px auto;
 		}
 
-		a {color:white;}
+		a {
+			color:white;
+
+			&:hover {color:#3b3b3b;}
+		}
 
 		li {list-style:none;}
 	}
