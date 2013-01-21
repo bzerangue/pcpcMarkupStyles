@@ -95,8 +95,8 @@
 						width: 18px;
 						float: right;
 						position: absolute;
-						top: 8px;
-						right: 8px;
+						top: 9px;
+						right: 9px;
 
 
 				    }
@@ -105,8 +105,8 @@
 				    	@include transform(rotate(180deg));
 						z-index: 1;
 						-moz-transform-origin: center center;
-						top: -20px;
-						right: -6px;
+						top: 8px;
+						right: 2px;
 				    }
 				}
 			}
