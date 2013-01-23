@@ -1506,7 +1506,7 @@ div.orbit-wrapper div.timer { display: none; }
 .welcome .orbit-wrapper .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition: opacity 400ms; -moz-transition: opacity 400ms; -o-transition: opacity 400ms; transition: opacity 400ms; }
 .welcome .orbit-wrapper:hover .slider-nav span { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .welcome .orbit-wrapper div.slider-nav span { top: 0; margin-top: 0; }
-.welcome .orbit-wrapper div.slider-nav span.left, .welcome .orbit-wrapper div.slider-nav span.right { width: 14%; height: 100%; }
+.welcome .orbit-wrapper div.slider-nav span.left, .welcome .orbit-wrapper div.slider-nav span.right { width: 180px; height: 100%; }
 .welcome .orbit-wrapper div.slider-nav span.left { background: url("../images/site/orbitArrowL@2x.png") no-repeat; }
 .welcome .orbit-wrapper div.slider-nav span.right { background: url("../images/site/orbitArrowR@2x.png") no-repeat; }
 
@@ -1518,9 +1518,11 @@ div.orbit-wrapper div.timer { display: none; }
 .feature .orbit-wrapper div.slider-nav span.right { background-position: -272px -44px; }
 .feature .orbit-wrapper div.slider-nav span.right:hover { background-position: -272px 5px; }
 
+@media only screen and (max-width: 940px) { .welcome .orbit-wrapper div.slider-nav span.left { background-position: 0 -60px; }
+  .welcome .orbit-wrapper div.slider-nav span.right { background-position: 0 -60px; } }
 @media only screen and (max-width: 767px) { div.orbit-wrapper div.slider-nav.hide-for-small, div.orbit-wrapper div.slider-nav#menu, div.orbit-wrapper .main-section div.slider-nav.breadcrumbs, .main-section div.orbit-wrapper div.slider-nav.breadcrumbs { display: inherit !important; }
   .welcome .orbit-wrapper div.slider-nav span.left { background-position: -20px -120px; }
-  .welcome .orbit-wrapper div.slider-nav span.right { background-position: -120px -120px; }
+  .welcome .orbit-wrapper div.slider-nav span.right { background-position: 0px -120px; }
   .welcome .orbit-wrapper .orbit-slide-text p, .welcome .orbit-wrapper .orbit-slide-text img { display: none; }
   .welcome .orbit-wrapper .orbit-slide-text h4 { font-size: 14px; }
   .welcome .orbit-wrapper .orbit-slide-text span.tag { float: left; }
@@ -1531,6 +1533,8 @@ div.orbit-wrapper div.timer { display: none; }
   .feature .orbit-wrapper #featuredOrbit img { width: 50%; margin: 0 auto; }
   .feature .orbit-wrapper #featuredOrbit p { display: none; }
   .feature .orbit-wrapper #featuredOrbit h4 { font-size: 18px; text-align: center; } }
+@media only screen and (max-width: 420px) { .welcome .orbit-wrapper div.slider-nav span.left { background-position: -20px -120px; width: 40px; }
+  .welcome .orbit-wrapper div.slider-nav span.right { background-position: -130px -120px; width: 40px; } }
 /* Media Element Default CSS */
 .mejs-container { position: relative; background: #000; font-family: Helvetica, Arial; text-align: left; vertical-align: top; text-indent: 0; }
 

@@ -66,7 +66,7 @@ div.orbit-wrapper div.timer {
 			span {top: 0;margin-top:0;}
 
 			span.left, span.right {
-				width:14%;
+				width:180px;
 				height:100%;
 			}
 			span.left {
@@ -118,6 +118,25 @@ div.orbit-wrapper div.timer {
 }
 
 
+// MQ Below 940 
+@media only screen and (max-width: 940px) {
+	// Welcome Orbit ---
+	.welcome .orbit-wrapper {
+		
+		div.slider-nav {
+
+			span.left {
+				background-position:0 -60px;
+
+			}
+			span.right {
+				background-position:0 -60px;
+			}
+		}
+	}
+}
+
+
 // MQ Below 767px
 @media only screen and (max-width: 767px) {
 	
@@ -137,7 +156,7 @@ div.orbit-wrapper div.timer {
 				background-position:-20px -120px;
 			}
 			span.right {
-				background-position:-120px -120px;
+				background-position:-0px -120px;
 			}
 		}
 
@@ -180,4 +199,25 @@ div.orbit-wrapper div.timer {
 		margin-right: 15px;
 	}
 
+}
+
+
+// MQ: Below 420 
+@media only screen and (max-width: 420px) {
+	// Welcome Orbit ---
+	.welcome .orbit-wrapper {
+		
+		div.slider-nav {
+
+			span.left {
+				background-position:-20px -120px;
+				width: 40px;
+			}
+			span.right {
+				background-position: -130px -120px;
+				width: 40px;
+			}
+		}
+
+	}
 }
