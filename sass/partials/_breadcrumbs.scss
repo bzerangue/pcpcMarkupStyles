@@ -4,14 +4,21 @@ ul.breadcrumbs {
 	background: none;
 	border: 0;
 
-	li span {
-		text-transform: capitalize;
-		color: $grey;
-		font-size: ms(0);
+	li {
+		padding: 0 12px 0 15px;
 
-		&.current {
-			font-weight: 600;
-			color: $light-charcoal;
+		span {
+			text-transform: capitalize;
+			color: $grey;
+			font-size: ms(0);
+
+			&.current {
+				font-weight: 600;
+				color: $light-charcoal;
+			}
 		}
+
 	}
+
+	
 }

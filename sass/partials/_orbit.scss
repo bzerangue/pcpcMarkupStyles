@@ -16,12 +16,21 @@ div.orbit-wrapper div.timer {
 
 
 // Welcome Orbit
+#welcomeOrbit {
+	max-height: 320px;
+}
+
 .welcome {
 	.orbit-wrapper {
 		border-bottom: 1px solid $hr;
 		
 		.orbit-slide {
 			padding:0;
+
+			.orbit-slide-image {
+				max-width: 1440px;
+				margin: 0 auto;
+			}
 
 			.orbit-slide-text {
 				@include column(10, center);

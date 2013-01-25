@@ -1360,6 +1360,7 @@ ul.zurb-apps li.solidify { background: url(http://www.zurb.com/assets/mega-drop-
 
 /* Navigation: Breadcrumbs */
 ul.breadcrumbs { background: none; border: 0; }
+ul.breadcrumbs li { padding: 0 12px 0 15px; }
 ul.breadcrumbs li span { text-transform: capitalize; color: #ababab; font-size: 14px; }
 ul.breadcrumbs li span.current { font-weight: 600; color: #545454; }
 
@@ -1490,8 +1491,11 @@ div.orbit, div.orbit-wrapper { margin-bottom: 0; }
 
 div.orbit-wrapper div.timer { display: none; }
 
+#welcomeOrbit { max-height: 320px; }
+
 .welcome .orbit-wrapper { border-bottom: 1px solid #e4e1e1; }
 .welcome .orbit-wrapper .orbit-slide { padding: 0; }
+.welcome .orbit-wrapper .orbit-slide .orbit-slide-image { max-width: 1440px; margin: 0 auto; }
 .welcome .orbit-wrapper .orbit-slide .orbit-slide-text { margin: 0 auto !important; width: 83.33333%; }
 @media only screen and (max-width: 767px) { .welcome .orbit-wrapper .orbit-slide .orbit-slide-text { float: left; width: 100%; } }
 .welcome .orbit-wrapper .orbit-slide .orbit-slide-text span.meta { display: block; font-size: 12px; color: #999; margin: 2px auto; }
