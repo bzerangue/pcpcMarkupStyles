@@ -9,12 +9,12 @@ ul.breadcrumbs {
 
 		span {
 			text-transform: capitalize;
-			color: $grey;
+			color: lighten($text-color, 48%);
 			font-size: ms(0);
 
 			&.current {
 				font-weight: 600;
-				color: $light-charcoal;
+				color: lighten($text-color, 5%);
 			}
 		}
 

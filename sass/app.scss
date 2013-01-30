@@ -65,12 +65,12 @@
 // ----------------------------------------
 // Custom Styles
 
+// Colors, Fonts & Img Paths
+@import "partials/colors-fontpaths-imgpaths";
+
 // Mixins & Placeholders
 @import "mixins/horizontal-centered-list";
 @import "partials/placeholders";
-
-// Colors, Fonts & Img Paths
-@import "partials/colors-fontpaths-imgpaths";
 
 // Buttons
 @import "partials/buttons";

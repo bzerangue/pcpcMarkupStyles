@@ -3,7 +3,7 @@
 */
 
 
-/* List Blocks - good for Resources */
+// List Blocks - good for Resources
 %list-block {
 	border-bottom: 1px solid #ddd;
 	ul {
@@ -21,16 +21,15 @@
 	}
 }
 
-%blue-smooth-gradient-bg {
-	// background-color: #004867; // Old browsers
-	// @include filter-gradient(#004867, #00567d, vertical); // IE6-9
-	// @include background-image(linear-gradient(top,  #004867 0%,#00567d 100%));
-
-	background-color: #0b4869; // Old browsers
-	@include filter-gradient(#0b4869, #03567f, vertical); // IE6-9
-	@include background-image(linear-gradient(darken(rgba(3,86,123,1),5%), rgba(3,86,123,1)));	
-}
-
+// Arrow Rightwards
 %arrow-rightwards {
 	&:after {content: ' →';}
 }
+
+// Main Gradient
+%main-smooth-gradient-bg {
+	background: darken($main-color, 16%); // Old browsers
+	@include filter-gradient(darken($main-color, 16%), darken($main-color, 8%), vertical); // IE6-9
+	@include background-image(linear-gradient(darken($main-color,16%), darken($main-color,8%)));	
+}
+

@@ -22,7 +22,7 @@ div.orbit-wrapper div.timer {
 
 .welcome {
 	.orbit-wrapper {
-		border-bottom: 1px solid $hr;
+		border-bottom: 1px solid lighten($dark-color, 52%);
 		
 		.orbit-slide {
 			padding:0;

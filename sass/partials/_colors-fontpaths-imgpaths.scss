@@ -1,20 +1,13 @@
 // 
 // :: Colors, Font Family Paths, Image Paths, Type 
 // 
-
-// Colors
-$blue: #176f9f;
-$black: #3b3b3b;
-
-$light-charcoal: #545454; 
-$grey: #ababab;
-$light-grey: #C7C7C7;
-$green: #a1b09b;
-$white: #f8f6f0;
-$orange:  #cc5b04;
-$periwinkle: #88BBD6; 
-$dark-blue: #1F2A30;
-$hr: #E4E1E1;
+// Theme Colors
+$main-color:#176f9f;
+$highlight-color: #cc5b04;
+$secondary-color:#a1b09b;
+$dark-color:#3b3b3b;
+$text-color: #3b3b3b;
+$header-color: #3b3b3b;
 
 // Font Family Paths
 $sans:"proxima-nova", "proxima-nova-n4", sans-serif;
@@ -22,5 +15,3 @@ $serif:"minion-pro", serif;
 
 // Image Paths
 $sprite: url(../images/site/sprite+@2x.png) no-repeat;
-
-// /* Type */

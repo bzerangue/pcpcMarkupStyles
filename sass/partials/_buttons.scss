@@ -9,7 +9,7 @@
 
 %button, .button { 
 	width: auto; 
-	background: $light-grey; 
+	background: lighten($dark-color, 52%); 
 	color: white; 
 	text-transform: uppercase;
 	font-size: 13px;
@@ -22,7 +22,7 @@
 	-webkit-appearance:none;
 	@include transition(background-color 0.15s ease-in-out);
 	@include border-radius(16px 16px);
-	&:hover { color: white; background-color: $blue; }
+	&:hover { color: white; background-color: $main-color; }
 	&:active { @include box-shadow( 0 1px 1px rgba(0, 0, 0, 0.68) inset);}
 	&:focus { @include box-shadow(0 0 4px #2ba6cb, 0 1px 0 rgba(255, 255, 255, 0.4) inset);  }
 }

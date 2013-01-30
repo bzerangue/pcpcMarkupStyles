@@ -5,7 +5,7 @@
 
 	.mejs-controls {
 
-		background: #145f89; 
+		background: $main-color; 
 		// border: 1px solid #2a2a2a;
 		@include border-radius(3px 3px);
 		padding: 0 8px;

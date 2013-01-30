@@ -2,8 +2,9 @@
 
 	&.top-bar {
 		margin-bottom: 0;
+		background: $main-color;
 		background: url(../images/site/glass.png) repeat-x 0 -5px, url(../images/site/bg-subnav-grain.png) repeat;
-		border-bottom: 1px solid #0B3852;
+		border-bottom: 1px solid darken($main-color, 32%);
 
 		
 		ul > li {
@@ -18,8 +19,8 @@
 			a:not(.button)	{
 				@include text-shadow(-1px -1px 1px rgba(0, 0, 0, 0.5));
 				text-transform: uppercase;
-				border-right: 1px solid #0C4B6E;
-				border-left: 1px solid #3087AE;
+				border-right: 1px solid darken($main-color, 15%);
+				border-left: 1px solid lighten($main-color, 5%);
 				font-family: $sans;
 				color: #F7F4EE;
 				font-weight: 600;
@@ -31,7 +32,7 @@
 
 				//Hover
 				&:hover {
-					color: #15415B;
+					color: darken($main-color, 25%); 
 					text-shadow: 0 -1px 0px rgba(8, 41, 58, 0.44), 0 1px 0px rgba(250, 250, 250, 0.14);
 				}
 			}
@@ -59,12 +60,12 @@
 				display: none;
 				position:absolute;
 				height:auto;
-				background: #114c6e;
-  				background: rgba(17, 76, 110, 0.98);
+				background: darken($main-color, 16%);
+  				// background: rgba(17, 76, 110, 0.98);
   				z-index: 60;
   				padding: 16px 0 32px;
-  				border-top: 1px solid #296797;
-				border-bottom: 1px solid #072944;
+  				border-top: 1px solid darken($main-color, 12%);
+				border-bottom: 1px solid darken($main-color, 48%);
 				top: 42px;
 			}
 
@@ -86,14 +87,15 @@
 						font-weight: 400px;
 
 						&:hover {
-							color: $dark-blue;
+							color: darken($main-color, 48%);
 						}
 					}
 				}
 			}
 
 			li.name {
-				color:$periwinkle;
+				display: block !important;
+				color:darken($main-color, 48%);
 				font-size: 13px;
 				font-weight: 600;
 				margin-bottom: 7px;
@@ -121,7 +123,7 @@
 
 		section {
 			@include box-shadow(inset 0 0px 6px rgba(0, 0, 0, .4));
-			background:#05354d;
+			background:darken($main-color, 16%);
 		}
 
 		ul > li {
